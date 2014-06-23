@@ -1,3 +1,5 @@
 These scripts are designed to evaluate the maize domestication bottleneck.
 
 mapData.R: Determine maize and teosinte individuals to use for the analysis. Load data from a csv and map using R.
+
+merge.sh: This script merges multiple bamfiles (from one individual) into one bamfile, as needed by angsd. Pulled from Jeff RI's github.
