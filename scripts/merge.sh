@@ -1,4 +1,11 @@
 #!/bin/bash -l
+#SBATCH -D /home/beissing/Dom_Bot_Git
+#SBATCH -o /home/beissing/Dom_Bot_Git/slurm-log/bam_merge_out.txt
+#SBATCH -e /home/beissing/Dom_Bot_Git/slurm-log/bam_merge_err.txt
+#SBATCH -J bam_merge
+#SBATCH -p bigmem
+set -e
+set -u
 
 # merge bam files to single individuals 
 
