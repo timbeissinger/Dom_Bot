@@ -1,0 +1,13 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.2 loaded 
+	-> Filterfile: /home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL.txt supplied will generate binary representations...
+	-> Parsing chr:'10'
+	-> Filtering complete: Observed: 1 different chromosomes from file:/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL.txt
+	-> [abcFilter.cpp] Reading binary representation:/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL.txt
+	-> [abcFilter.cpp] nChr: 1 loaded from binary filter file
+	-> [abcFilter.cpp] -sites is still beta, use at own risk...
+	-> Reading fasta: DATA/TRIP/TRIP.fa.gz
+	-> Reading fasta: /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa
+	-> Parsing 20 number of samples 
+	-> Printing at chr: 10 pos:179900 chunknumber 100
+	-> Printing at chr: 10 pos:427466 chunknumber 200
