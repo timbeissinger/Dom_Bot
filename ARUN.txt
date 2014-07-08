@@ -1,0 +1,23 @@
+A. Things for Arun to calculate:
+
+       1. Thetas (all of the below come from the same command)
+          -Watterson
+	  -Pairwise
+	  -Singleton
+	  -thetaH
+	  -thetaL
+
+       2. Tajima's D
+
+B. Subsets of sites on which to calculate these
+   
+   1. Whole genome
+
+   2. Potentially neutral
+      -Non-coding sites (exclude genes and +/- 5kb of genes)
+      -Four-fold degenerate sites
+      -Exclude constrained sites (exclude high GERP score)
+
+   3. Potentially selected
+      -Coding sites (including +/- 5kb)
+      -Constrained sites (only include high GERP score)
