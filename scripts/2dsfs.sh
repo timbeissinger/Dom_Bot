@@ -75,7 +75,7 @@ echo
 
 
 # Now we estimate the joint sfs using the realSFS program
-command6=" 2dsfs "$outputdir"/"$pop1"conditioned.saf "$outputdir"/"$pop2"conditioned.saf $nPop1 $nPop2 -P $cpu > SFS/2dsfs."$pop1"."$pop2".sfs"
-echo "$angsdir"/misc/realSFS $command6
+command6=" 2dsfs "$outputdir"/"$pop1"conditioned.saf "$outputdir"/"$pop2"conditioned.saf $nPop1 $nPop2 -P $cpu"
+echo "$angsdir"/misc/realSFS $command6 " > SFS/2dsfs."$pop1"."$pop2".sfs"
 echo 
-"$angsdir"/misc/realSFS $command6
+"$angsdir"/misc/realSFS $command6  > SFS/2dsfs."$pop1"."$pop2".sfs
