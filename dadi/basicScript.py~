@@ -1,0 +1,32 @@
+### This script runs some basic dadi data analysis and examples. Use it to learn about dadi ###
+### Timothy M. Beissinger
+### 6-17-2014
+
+### Import dadi
+import numpy
+import dadi
+
+### Create toy frequency spectrum object
+fsSingle = dadi.Spectrum([0,100,20,10,1,0])
+
+### Some summary statistics for single-population spectrum
+thetaW = fsSingle.Watterson_theta()
+pi = fsSingle.pi()
+D = fsSingle.Tajima_D()
+S = fsSingle.S()
+
+### Code to load a frequcency spectrum object from a SNP file
+dd = dadi.Misc.make_data_dict ("/Users/beissinger/Documents/DomesticationBottleneck/dadi-1.6.3/examples/fs_from_data/data.txt")
+fsDouble = dadi.Spectrum.from_data_dict (dd, pop_ids=['YRI','CEU'],projections=[20,20],polarized=True)
+
+### Time to plot the fs
+import pylab
+dadi.Plotting.plot_single_2d_sfs(fsDouble,vmin=0.1)
+pylab.show()
+
+### Compute some summary statistics
+S = fsDouble.S() # Number of segregating sites
+Fst = fsDouble.Fst() # Fst
+
+
+

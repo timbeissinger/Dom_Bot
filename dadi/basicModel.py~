@@ -1,0 +1,53 @@
+##############################################################################
+### This script runs a basic dadi bottleneck model using n ouput generated ###
+### from angsd.                                                            ###
+##############################################################################
+
+### Timothy M. Beissinger
+### 7-14-2014
+
+import numpy
+import dadi
+
+### Load the single-pop spectra
+fsBKN = dadi.Spectrum.from_file("/Users/beissinger/Documents/DomesticationBottleneck/Dom_Bot/SFS/sfsBKN.dadi" )
+fsTIL = dadi.Spectrum.from_file("/Users/beissinger/Documents/DomesticationBottleneck/Dom_Bot/SFS/sfsTIL.dadi" )
+
+### Load a 2d fs (BKN and TIL)
+fs2d = dadi.Spectrum.from_file("/Users/beissinger/Documents/DomesticationBottleneck/Dom_Bot/SFS/2d_BKN_TIL.dadi" )
+
+### Time to plot the fs
+import pylab
+dadi.Plotting.plot_single_2d_sfs(fs2d,vmin=1)
+pylab.show()
+
+### Compute some summary statistics
+S = fs2d.S() # Number of segregating sites 
+Fst = fs2d.Fst() # Fst
+
+######################################
+######### Simple Bottleneck  #########
+######################################
+
+# determine sample sizes
+ns = fs2d.sample_sizes
+ns=fsTIL.sample_sizes
+
+# set grid sizes
+pts = [40,50,60]
+
+def bottleneck((nuB, nuF, TB, TF), ns, pts): 
+#nuB,nuF,TB,TF = params
+"""
+nuB = 
+nuF =
+TB =
+TF =
+"""
+xx = Numerics.default_grid(pts)
+
+phi = PhiManip.phi_1D(xx)
+phi = Integration.one_pop(phi, xx, TB, nuB) 
+phi = Integration.one_pop(phi, xx, TF, nuF)
+fs = Spectrum.from_phi(phi, ns, (xx,)) 
+return fs

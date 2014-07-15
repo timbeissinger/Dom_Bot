@@ -1,0 +1,16 @@
+
+def bottleneck((nuB, nuF, TB, TF), ns, pts): 
+#nuB,nuF,TB,TF = params
+"""
+nuB = 
+nuF =
+TB =
+TF =
+"""
+xx = Numerics.default_grid(pts)
+
+phi = PhiManip.phi_1D(xx)
+phi = Integration.one_pop(phi, xx, TB, nuB) 
+phi = Integration.one_pop(phi, xx, TF, nuF)
+fs = Spectrum.from_phi(phi, ns, (xx,)) 
+return fs
