@@ -1,0 +1,1 @@
+-bam DATA/LISTS/BKN_list.txt -out TEMP/BKN_no_inb -doMajorMinor 1 -doMaf 1 -doSaf 1 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ 30 -minQ 20 -nInd 20 -minInd 16 -baq 1 -ref /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa -GL 1 -P 32 -r 10:1-10000000

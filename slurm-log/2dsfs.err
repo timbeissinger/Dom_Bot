@@ -1,13 +1,105 @@
 Module BUILD 1.6 Loaded.
 Module slurm/2.6.2 loaded 
-	-> Filterfile: /home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL.txt supplied will generate binary representations...
-	-> Parsing chr:'10'
-	-> Filtering complete: Observed: 1 different chromosomes from file:/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL.txt
-	-> [abcFilter.cpp] Reading binary representation:/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL.txt
-	-> [abcFilter.cpp] nChr: 1 loaded from binary filter file
-	-> [abcFilter.cpp] -sites is still beta, use at own risk...
-	-> Reading fasta: DATA/TRIP/TRIP.fa.gz
-	-> Reading fasta: /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa
-	-> Parsing 20 number of samples 
-	-> Printing at chr: 10 pos:179900 chunknumber 100
-	-> Printing at chr: 10 pos:427466 chunknumber 200
+fname1:/home/beissing/Dom_Bot_Git/TEMP/BKNconditioned.saffname2:/home/beissing/Dom_Bot_Git/TEMP/TILconditioned.saf chr1:40 chr2:32 startsfs:(null) nThreads=32 tole=0.000001 maxIter=100 nSites:-1
+startlik=-9380935.533065
+[0] lik=-1868267.884124 diff=7.51267e+06
+[1] lik=-1033838.453281 diff=834429
+[2] lik=-790678.684798 diff=243160
+[3] lik=-708708.850532 diff=81969.8
+[4] lik=-680954.912973 diff=27753.9
+[5] lik=-671568.903054 diff=9386.01
+[6] lik=-668358.300018 diff=3210.6
+[7] lik=-667198.028277 diff=1160.27
+[8] lik=-666727.846135 diff=470.182
+[9] lik=-666506.028805 diff=221.817
+[10] lik=-666384.560631 diff=121.468
+[11] lik=-666309.541722 diff=75.0189
+[12] lik=-666258.927255 diff=50.6145
+[13] lik=-666222.514768 diff=36.4125
+[14] lik=-666195.028235 diff=27.4865
+[15] lik=-666173.483934 diff=21.5443
+[16] lik=-666156.075067 diff=17.4089
+[17] lik=-666141.649122 diff=14.4259
+[18] lik=-666129.440502 diff=12.2086
+[19] lik=-666118.923590 diff=10.5169
+[20] lik=-666109.727325 diff=9.19627
+[21] lik=-666101.583293 diff=8.14403
+[22] lik=-666094.293053 diff=7.29024
+[23] lik=-666087.706958 diff=6.58609
+[24] lik=-666081.710095 diff=5.99686
+[25] lik=-666076.212734 diff=5.49736
+[26] lik=-666071.143729 diff=5.06901
+[27] lik=-666066.445867 diff=4.69786
+[28] lik=-666062.072542 diff=4.37333
+[29] lik=-666057.985334 diff=4.08721
+[30] lik=-666054.152229 diff=3.83311
+[31] lik=-666050.546284 diff=3.60594
+[32] lik=-666047.144620 diff=3.40166
+[33] lik=-666043.927648 diff=3.21697
+[34] lik=-666040.878466 diff=3.04918
+[35] lik=-666037.982393 diff=2.89607
+[36] lik=-666035.226598 diff=2.7558
+[37] lik=-666032.599795 diff=2.6268
+[38] lik=-666030.092011 diff=2.50778
+[39] lik=-666027.694383 diff=2.39763
+[40] lik=-666025.399005 diff=2.29538
+[41] lik=-666023.198789 diff=2.20022
+[42] lik=-666021.087359 diff=2.11143
+[43] lik=-666019.058956 diff=2.0284
+[44] lik=-666017.108362 diff=1.95059
+[45] lik=-666015.230832 diff=1.87753
+[46] lik=-666013.422040 diff=1.80879
+[47] lik=-666011.678031 diff=1.74401
+[48] lik=-666009.995175 diff=1.68286
+[49] lik=-666008.370139 diff=1.62504
+[50] lik=-666006.799848 diff=1.57029
+[51] lik=-666005.281465 diff=1.51838
+[52] lik=-666003.812361 diff=1.4691
+[53] lik=-666002.390100 diff=1.42226
+[54] lik=-666001.012417 diff=1.37768
+[55] lik=-665999.677204 diff=1.33521
+[56] lik=-665998.382494 diff=1.29471
+[57] lik=-665997.126450 diff=1.25604
+[58] lik=-665995.907353 diff=1.2191
+[59] lik=-665994.723591 diff=1.18376
+[60] lik=-665993.573653 diff=1.14994
+[61] lik=-665992.456117 diff=1.11754
+[62] lik=-665991.369647 diff=1.08647
+[63] lik=-665990.312982 diff=1.05667
+[64] lik=-665989.284933 diff=1.02805
+[65] lik=-665988.284378 diff=1.00055
+[66] lik=-665987.310255 diff=0.974123
+[67] lik=-665986.361560 diff=0.948696
+[68] lik=-665985.437339 diff=0.92422
+[69] lik=-665984.536691 diff=0.900648
+[70] lik=-665983.658758 diff=0.877933
+[71] lik=-665982.802725 diff=0.856033
+[72] lik=-665981.967818 diff=0.834907
+[73] lik=-665981.153300 diff=0.814518
+[74] lik=-665980.358469 diff=0.794832
+[75] lik=-665979.582654 diff=0.775814
+[76] lik=-665978.825218 diff=0.757436
+[77] lik=-665978.085551 diff=0.739667
+[78] lik=-665977.363071 diff=0.72248
+[79] lik=-665976.657220 diff=0.705851
+[80] lik=-665975.967467 diff=0.689753
+[81] lik=-665975.293301 diff=0.674166
+[82] lik=-665974.634235 diff=0.659066
+[83] lik=-665973.989801 diff=0.644434
+[84] lik=-665973.359550 diff=0.630251
+[85] lik=-665972.743053 diff=0.616498
+[86] lik=-665972.139896 diff=0.603157
+[87] lik=-665971.549682 diff=0.590213
+[88] lik=-665970.972032 diff=0.57765
+[89] lik=-665970.406579 diff=0.565453
+[90] lik=-665969.852970 diff=0.553609
+[91] lik=-665969.310868 diff=0.542102
+[92] lik=-665968.779945 diff=0.530922
+[93] lik=-665968.259889 diff=0.520056
+[94] lik=-665967.750397 diff=0.509492
+[95] lik=-665967.251177 diff=0.49922
+[96] lik=-665966.761949 diff=0.489228
+[97] lik=-665966.282442 diff=0.479507
+[98] lik=-665965.812394 diff=0.470048
+[99] lik=-665965.351554 diff=0.46084
+likelihood: -799407.975137

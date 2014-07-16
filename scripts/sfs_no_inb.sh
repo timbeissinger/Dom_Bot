@@ -1,15 +1,14 @@
 #!/bin/bash -l
 #SBATCH -D /home/beissing/Dom_Bot_Git
-#SBATCH -J sfs
-#SBATCH -o slurm-log/sfs.out
+#SBATCH -J sfs_no_inb
+#SBATCH -o slurm-log/sfs_no_inb.out
 #SBATCH -p bigmem
-#SBATCH -e slurm-log/sfs.err
+#SBATCH -e slurm-log/sfs_no_inb.err
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=32
 
 # script to run ANGSD on hapmap2 bam files
 module load angsd
-
 
 
 angsdir=/home/beissing/bin/angsd0.609
@@ -41,7 +40,7 @@ range="10:1-10000000"
 # -P 8 use 8 threads
 # -indF individiual inbreeding coefficient. for inbred lines just make a files of "1" on each line for each bamfile. otherwise use ngsF to estimate (see inbreeding.sh script)
 
-command1="-bam DATA/LISTS/"$taxon"_list.txt -out TEMP/"$taxon" -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$taxon".indF -doSaf 1 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nInd -minInd $minInd -baq 1 -ref /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -r $range"
+command1="-bam DATA/LISTS/"$taxon"_list.txt -out TEMP/"$taxon"_no_inb -doMajorMinor 1 -doMaf 1 -doSaf 1 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nInd -minInd $minInd -baq 1 -ref /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -r $range"
 echo $command1
 $angsdir/angsd $command1
 
