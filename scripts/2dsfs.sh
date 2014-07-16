@@ -28,6 +28,9 @@ nIndPop1=$( wc -l DATA/LISTS/"$pop1"_list.txt | cut -f 1 -d " " )
 nIndPop2=$( wc -l DATA/LISTS/"$pop2"_list.txt | cut -f 1 -d " " )
 nPop1=$( expr 2 \* $nIndPop1 )
 nPop2=$( expr 2 \* $nIndPop2 )
+minperc=0.8
+minIndPop1=$( printf "%.0f" $(echo "scale=2;$minperc*$nIndPop1" | bc))
+minIndPop2=$( printf "%.0f" $(echo "scale=2;$minperc*$nIndPop2" | bc))
 glikehood=1
 minMapQ=30
 cpu=32
@@ -42,14 +45,14 @@ range="10:1-10000000"
 
 # Next, extract the compressed files
 
-#command1="gunzip "$outputdir"/"$pop1".saf.pos.gz "$outputdir""
-#command2="gunzip "$outputdir"/"$pop2".saf.pos.gz "$outputdir""
-#echo $command1
+command1=""$outputdir"/"$pop1".saf.pos.gz "$outputdir""
+command2=""$outputdir"/"$pop2".saf.pos.gz "$outputdir""
+echo gunzip $command1
 echo
-#echo $command2
+echo gunzip $command2
 echo
-#$command1
-#$command2
+gunzip $command1
+gunzip $command2
 
 # Now we find the positions that occur in both populations using the
 # uniq POSIX program
@@ -62,12 +65,12 @@ cat "$outputdir"/"$pop1".saf.pos "$outputdir"/"$pop2".saf.pos|sort|uniq -d >"$ou
 # Now redo angsd sample allele frequency calculation by conditioning on
 # the sites that occur in both populations.
 
-command4=" -bam DATA/LISTS/"$pop1"_list.txt -out "$outputdir"/"$pop1"conditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$pop1".indF -doSaf 1 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nIndPop1 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -r $range -sites "$outputdir"/intersect."$pop1"."$pop2".txt"
+command4=" -bam DATA/LISTS/"$pop1"_list.txt -out "$outputdir"/"$pop1"conditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$pop1".indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nIndPop1 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -r $range -sites "$outputdir"/intersect."$pop1"."$pop2".txt"
 echo "$angsdir"/angsd $command4
 echo 
 "$angsdir"/angsd $command4
 
-command5=" -bam DATA/LISTS/"$pop2"_list.txt -out "$outputdir"/"$pop2"conditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$pop2".indF -doSaf 1 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nIndPop2 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -r $range -sites "$outputdir"/intersect."$pop1"."$pop2".txt"
+command5=" -bam DATA/LISTS/"$pop2"_list.txt -out "$outputdir"/"$pop2"conditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$pop2".indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nIndPop2 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -r $range -sites "$outputdir"/intersect."$pop1"."$pop2".txt"
 echo "$angsdir"/angsd $command5
 echo 
 "$angsdir"/angsd $command5
