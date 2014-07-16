@@ -41,7 +41,7 @@ range="10:1-10000000"
 # -P 8 use 8 threads
 # -indF individiual inbreeding coefficient. for inbred lines just make a files of "1" on each line for each bamfile. otherwise use ngsF to estimate (see inbreeding.sh script)
 
-command1="-bam DATA/LISTS/"$taxon"_list.txt -out TEMP/"$taxon" -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$taxon".indF -doSaf 1 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nInd -minInd $minInd -baq 1 -ref /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -r $range"
+command1="-bam DATA/LISTS/"$taxon"_list.txt -out TEMP/"$taxon" -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$taxon".indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nInd -minInd $minInd -baq 1 -ref /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -r $range"
 echo $command1
 $angsdir/angsd $command1
 
@@ -55,6 +55,6 @@ $angsdir/angsd $command1
 	# -0.133730 -3.724029 -4.246469 -4.981319 -5.453217 -5.803669 -6.076224 -6.330416 -6.501992 -6.713127 -6.882129 -6.970549 -7.289374 -7.434923 -7.308903 -7.057695 -7.457825 -7.740251 -7.665521 -7.683324 -7.788163 -7.702094 -7.562837 -7.491339 -7.416449 -7.364919 -7.107873 -6.870063 -6.458559 -6.044445 -2.994086
 	# which corresponds to exp(-0.13)~0.9 or 90% of sites are fixed for ancestral allele, and exp(-2.994086) or ~5% are fixed for derived allele. 
 	# remaining 5% are polymorphic
-#command2="TEMP/"$taxon".saf $n -P $cpu" 
-#echo $command2
-#$angsdir/misc/emOptim2 $command2 > results/"$taxon".sfs
+command2="TEMP/"$taxon".saf $n -P $cpu" 
+echo $command2
+$angsdir/misc/emOptim2 $command2 > SFS/"$taxon".sfs
