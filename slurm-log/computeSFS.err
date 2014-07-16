@@ -1,25 +1,30 @@
 Module BUILD 1.6 Loaded.
 Module slurm/2.6.2 loaded 
 Module angsd/570 loaded 
-fname1:TEMP/BKN.saf nChr:40 startsfs:(null) nThreads:32 tole=0.000001 maxIter=100 nSites=633066
-The choice of -nSites will require: 198.000000 megabyte memory, that is approx: 0.04% of total memory
-dim(GL1)=633066,41
-startlik=-4109474.108070
-[0] lik=-263578.100928 diff=3.8459e+06
-[1] lik=-263026.934933 diff=551.166
-[2] lik=-263021.420868 diff=5.51406
-[3] lik=-263021.188526 diff=0.232342
-[4] lik=-263021.145299 diff=0.0432266
-[5] lik=-263021.131417 diff=0.0138824
-[6] lik=-263021.126364 diff=0.00505303
-[7] lik=-263021.124441 diff=0.00192253
-[8] lik=-263021.123693 diff=0.000748672
-[9] lik=-263021.123397 diff=0.00029536
-[10] lik=-263021.123280 diff=0.000117765
-[11] lik=-263021.123232 diff=4.72266e-05
-[12] lik=-263021.123213 diff=1.91121e-05
-[13] lik=-263021.123205 diff=7.72963e-06
-[14] lik=-263021.123202 diff=3.15899e-06
-[15] lik=-263021.123201 diff=1.28563e-06
-[16] lik=-263021.123200 diff=5.30272e-07
-likelihood: -263021.123200
+fname1:TEMP/TIL.saf nChr:32 startsfs:(null) nThreads:32 tole=0.000001 maxIter=100 nSites=634999
+The choice of -nSites will require: 159.000000 megabyte memory, that is approx: 0.03% of total memory
+dim(GL1)=634999,33
+startlik=-3852746.663692
+[0] lik=-292525.232533 diff=3.56022e+06
+[1] lik=-292129.253678 diff=395.979
+[2] lik=-292127.003953 diff=2.24973
+[3] lik=-292126.799255 diff=0.204697
+[4] lik=-292126.719924 diff=0.079331
+[5] lik=-292126.682755 diff=0.0371691
+[6] lik=-292126.664538 diff=0.0182171
+[7] lik=-292126.655425 diff=0.00911333
+[8] lik=-292126.650811 diff=0.00461342
+[9] lik=-292126.648458 diff=0.00235345
+[10] lik=-292126.647251 diff=0.00120695
+[11] lik=-292126.646630 diff=0.000621026
+[12] lik=-292126.646309 diff=0.000320697
+[13] lik=-292126.646143 diff=0.000165867
+[14] lik=-292126.646058 diff=8.57731e-05
+[15] lik=-292126.646013 diff=4.44544e-05
+[16] lik=-292126.645990 diff=2.30609e-05
+[17] lik=-292126.645978 diff=1.19469e-05
+[18] lik=-292126.645972 diff=6.20022e-06
+[19] lik=-292126.645969 diff=3.21504e-06
+[20] lik=-292126.645967 diff=1.65578e-06
+[21] lik=-292126.645966 diff=8.64093e-07
+likelihood: -292126.645966

@@ -1,13 +1,15 @@
-BKN
 TIL
+BKN
 
+gunzip /home/beissing/Dom_Bot_Git/TEMP/TIL.saf.pos.gz
 
+gunzip /home/beissing/Dom_Bot_Git/TEMP/BKN.saf.pos.gz
 
-cat /home/beissing/Dom_Bot_Git/TEMP/BKN.saf.pos /home/beissing/Dom_Bot_Git/TEMP/TIL.saf.pos|sort|uniq -d >/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL.txt
+cat /home/beissing/Dom_Bot_Git/TEMP/TIL.saf.pos /home/beissing/Dom_Bot_Git/TEMP/BKN.saf.pos|sort|uniq -d >/home/beissing/Dom_Bot_Git/TEMP/intersect.TIL.BKN.txt
 
-/home/beissing/bin/angsd0.609/angsd -bam DATA/LISTS/BKN_list.txt -out /home/beissing/Dom_Bot_Git/TEMP/BKNconditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/BKN.indF -doSaf 1 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ 30 -minQ 20 -nInd 20 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL 1 -P 32 -r 10:1-10000000 -sites /home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL.txt
+/home/beissing/bin/angsd0.609/angsd -bam DATA/LISTS/TIL_list.txt -out /home/beissing/Dom_Bot_Git/TEMP/TILconditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/TIL.indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ 30 -minQ 20 -nInd 16 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL 1 -P 32 -r 10:1-10000000 -sites /home/beissing/Dom_Bot_Git/TEMP/intersect.TIL.BKN.txt
 
-/home/beissing/bin/angsd0.609/angsd -bam DATA/LISTS/TIL_list.txt -out /home/beissing/Dom_Bot_Git/TEMP/TILconditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/TIL.indF -doSaf 1 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ 30 -minQ 20 -nInd 16 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL 1 -P 32 -r 10:1-10000000 -sites /home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL.txt
+/home/beissing/bin/angsd0.609/angsd -bam DATA/LISTS/BKN_list.txt -out /home/beissing/Dom_Bot_Git/TEMP/BKNconditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/BKN.indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ 30 -minQ 20 -nInd 20 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL 1 -P 32 -r 10:1-10000000 -sites /home/beissing/Dom_Bot_Git/TEMP/intersect.TIL.BKN.txt
 
-/home/beissing/bin/angsd0.609/misc/realSFS 2dsfs /home/beissing/Dom_Bot_Git/TEMP/BKNconditioned.saf /home/beissing/Dom_Bot_Git/TEMP/TILconditioned.saf 40 32 -P 32 > SFS/2dsfs.BKN.TIL.sfs
+/home/beissing/bin/angsd0.609/misc/realSFS 2dsfs /home/beissing/Dom_Bot_Git/TEMP/TILconditioned.saf /home/beissing/Dom_Bot_Git/TEMP/BKNconditioned.saf 32 40 -P 32  > SFS/2dsfs.TIL.BKN.sfs
 

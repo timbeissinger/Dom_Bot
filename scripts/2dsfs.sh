@@ -45,13 +45,13 @@ range="10:1-10000000"
 
 # Next, extract the compressed files
 
-command1=""$outputdir"/"$pop1".saf.pos.gz "$outputdir""
-command2=""$outputdir"/"$pop2".saf.pos.gz "$outputdir""
+command1=""$outputdir"/"$pop1".saf.pos.gz "
+command2=""$outputdir"/"$pop2".saf.pos.gz "
 echo gunzip $command1
 echo
 echo gunzip $command2
 echo
-gunzip $command1
+#gunzip $command1
 gunzip $command2
 
 # Now we find the positions that occur in both populations using the
