@@ -12,3 +12,8 @@ sfsNoInb <- exp(scan("../SFS/BKN_no_inb.sfs"))
 
 ### Compare
 sfsInb - sfsNoInb # identical...
+
+### Plot
+pdf("../SFS/BKN.Inbreeding.Correct.pdf")
+barplot(sfsInb[-c(1,length(sfsInb))],names.arg=1:39)
+dev.off()
