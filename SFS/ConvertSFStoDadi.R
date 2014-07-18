@@ -27,7 +27,7 @@ write.table(sfsTILdadi,file="../SFS/sfsTIL.dadi",quote=F,row.names=F,col.names=F
 ### Convert 2d sfs. Script adapted from Jacob Crawford, https://github.com/mfumagalli/ngsToolsDev/blob/master/convert.2Dsfs.to.dadi.R
 
 # Read in 2D sfs
-sfs <- exp(read.table("../SFS/2dsfs.BKN.TIL.sfs"))*10000000 #we calculated 10 MB of DNA
+sfs <- exp(read.table("../SFS/2dsfs.TIL.BKN.sfs"))*10000000 #we calculated 10 MB of DNA
 sfs <- sfs[seq(1,nrow(sfs),2),seq(1,ncol(sfs),2)]
 
 # Get sample sizes and make header
@@ -43,7 +43,7 @@ for(i in 1:n1){
 }
 
 # Write out dadi format to file with same name as 2D sfs file with .fs appeded
-write.table(ns,file="../SFS/2d_BKN_TIL.dadi",col.names=FALSE,row.names=FALSE,quote=FALSE);
-write.table(paste(dadi,collapse=' '),file="../SFS/2d_BKN_TIL.dadi",col.names=FALSE,row.names=FALSE,quote=FALSE,append=TRUE);
+write.table(ns,file="../SFS/2d_TIL_BKN.dadi",col.names=FALSE,row.names=FALSE,quote=FALSE);
+write.table(paste(dadi,collapse=' '),file="../SFS/2d_TIL_BKN.dadi",col.names=FALSE,row.names=FALSE,quote=FALSE,append=TRUE);
 
 ##

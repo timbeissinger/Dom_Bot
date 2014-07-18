@@ -13,7 +13,7 @@ at size nuTF.
 import numpy
 import dadi
 
-def maizeBottleneck ((nuMB , nuMF, nuTF , TB , TF ), ns, pts):
+def maizeBottleneck ((nuMB , nuMF, TF ), ns, pts):
     # define the grid
     xx = dadi.Numerics.default_grid(pts)
 
@@ -23,15 +23,11 @@ def maizeBottleneck ((nuMB , nuMF, nuTF , TB , TF ), ns, pts):
     # now do the population split
     phi = dadi.PhiManip.phi_1D_to_2D(xx, phi)
 
-    # Send maize population through a bottleneck
-    phi = dadi.Integration.two_pops(phi, xx,T = TB, nu1 = nuTF, nu2 = nuMB)
-
     # define the exponential growth function
-#    nu_func = lambda t: numpy.exp(numpy.log(nuMF) * t/TF)
+    nu_func = lambda t: nuMB*(nuMF/nuMB)**(t/TF)
 
-    # Recover maize population exponentially
-    phi = dadi.Integration.two_pops(phi, xx, T = TF, nu1 = nuTF, nu2 = nuMF)
-
+    # Recover maize population exponentially, Teo constant
+    phi = dadi.Integration.two_pops(phi, xx, TF, nu1=1, nu2=nu_func)
 
     fs = dadi.Spectrum.from_phi(phi, ns, (xx,xx))
     return fs
