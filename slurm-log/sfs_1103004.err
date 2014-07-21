@@ -1,0 +1,76 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.2 loaded 
+Module angsd/570 loaded 
+	-> Reading fasta: DATA/TRIP/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 23 number of samples 
+	-> Printing at chr: 10 pos:179900 chunknumber 100
+	-> Printing at chr: 10 pos:427466 chunknumber 200
+	-> Printing at chr: 10 pos:861995 chunknumber 300
+	-> Printing at chr: 10 pos:1081024 chunknumber 400
+	-> Printing at chr: 10 pos:1406288 chunknumber 500
+	-> Printing at chr: 10 pos:1716976 chunknumber 600
+	-> Printing at chr: 10 pos:1921251 chunknumber 700
+	-> Printing at chr: 10 pos:2171320 chunknumber 800
+	-> Printing at chr: 10 pos:2595923 chunknumber 900
+	-> Printing at chr: 10 pos:2991132 chunknumber 1000
+	-> Printing at chr: 10 pos:3377249 chunknumber 1100
+	-> Printing at chr: 10 pos:3686702 chunknumber 1200
+	-> Printing at chr: 10 pos:4141291 chunknumber 1300
+	-> Printing at chr: 10 pos:4456209 chunknumber 1400
+	-> Printing at chr: 10 pos:4671861 chunknumber 1500
+	-> Printing at chr: 10 pos:4913613 chunknumber 1600
+	-> Printing at chr: 10 pos:5308954 chunknumber 1700
+	-> Printing at chr: 10 pos:5533686 chunknumber 1800
+	-> Printing at chr: 10 pos:5910692 chunknumber 1900
+	-> Printing at chr: 10 pos:6339099 chunknumber 2000
+	-> Printing at chr: 10 pos:6491074 chunknumber 2100
+	-> Printing at chr: 10 pos:6897263 chunknumber 2200
+	-> Printing at chr: 10 pos:7061228 chunknumber 2300
+	-> Printing at chr: 10 pos:7419774 chunknumber 2400
+	-> Printing at chr: 10 pos:7741497 chunknumber 2500
+	-> Printing at chr: 10 pos:7953730 chunknumber 2600
+	-> Printing at chr: 10 pos:8223934 chunknumber 2700
+	-> Printing at chr: 10 pos:8790692 chunknumber 2800
+	-> Printing at chr: 10 pos:9101716 chunknumber 2900
+	-> Printing at chr: 10 pos:9404015 chunknumber 3000
+	-> Printing at chr: 10 pos:9898633 chunknumber 3100
+
+	-> Done reading data waiting for calculations to finish
+	-> Calling destroy
+	-> Done waiting for threads
+	-> Output filenames:
+		->"TEMP/BKN.arg"
+		->"TEMP/BKN.mafs.gz"
+		->"TEMP/BKN.saf"
+		->"TEMP/BKN.saf.pos.gz"
+	-> Mon Jul 21 12:36:30 2014
+	-> Arguments and parameters for all analysis are located in .arg file
+	[ALL done] cpu-time used =  1647.96 sec
+	[ALL done] walltime used =  1354.00 sec
+fname1:TEMP/BKN.saf nChr:46 startsfs:(null) nThreads:32 tole=0.000001 maxIter=100 nSites=639039
+The choice of -nSites will require: 229.000000 megabyte memory, that is approx: 0.04% of total memory
+dim(GL1)=639039,47
+startlik=-4312310.947383
+[0] lik=-271273.374532 diff=4.04104e+06
+[1] lik=-270639.398100 diff=633.976
+[2] lik=-270632.400594 diff=6.99751
+[3] lik=-270631.992190 diff=0.408403
+[4] lik=-270631.883804 diff=0.108386
+[5] lik=-270631.841694 diff=0.0421108
+[6] lik=-270631.824111 diff=0.0175827
+[7] lik=-270631.816560 diff=0.00755046
+[8] lik=-270631.813259 diff=0.00330137
+[9] lik=-270631.811795 diff=0.00146426
+[10] lik=-270631.811137 diff=0.000657319
+[11] lik=-270631.810839 diff=0.000298264
+[12] lik=-270631.810703 diff=0.000136615
+[13] lik=-270631.810639 diff=6.3096e-05
+[14] lik=-270631.810610 diff=2.93599e-05
+[15] lik=-270631.810597 diff=1.35052e-05
+[16] lik=-270631.810590 diff=6.42438e-06
+[17] lik=-270631.810587 diff=3.00963e-06
+[18] lik=-270631.810586 diff=1.40117e-06
+[19] lik=-270631.810585 diff=6.58503e-07
+likelihood: -270631.810585

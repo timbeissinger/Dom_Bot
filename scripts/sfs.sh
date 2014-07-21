@@ -1,9 +1,10 @@
 #!/bin/bash -l
+
 #SBATCH -D /home/beissing/Dom_Bot_Git
 #SBATCH -J sfs
-#SBATCH -o slurm-log/sfs.out
+#SBATCH -o slurm-log/sfs_%j.out
 #SBATCH -p bigmem
-#SBATCH -e slurm-log/sfs.err
+#SBATCH -e slurm-log/sfs_%j.err
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=32
 
@@ -13,9 +14,10 @@ module load angsd
 
 
 angsdir=/home/beissing/bin/angsd0.609
-taxon=$1
+
 #windowsize=1000
 #step=500
+taxon=$1
 nInd=$( wc -l DATA/LISTS/"$taxon"_list.txt | cut -f 1 -d " " )
 n=$( expr 2 \* $nInd )
 minperc=0.8
@@ -57,4 +59,4 @@ $angsdir/angsd $command1
 	# remaining 5% are polymorphic
 command2="TEMP/"$taxon".saf $n -P $cpu" 
 echo $command2
-$angsdir/misc/emOptim2 $command2 > SFS/"$taxon".sfs
+$angsdir/misc/realSFS $command2 > SFS/"$taxon".sfs

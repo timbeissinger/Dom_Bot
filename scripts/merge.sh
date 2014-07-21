@@ -9,24 +9,28 @@ set -u
 
 # merge bam files to single individuals 
 
-for i in $( ls /home/beissing/BAMLINKS/ | cut -f 1 -d "_" | sort -n | uniq ); do
+# set directories
+input="/group/jrigrp3/bottleneckProject/v3_bams_bwamem"
+output="/group/jrigrp3/bottleneckProject/mergedBams"
+
+for i in $( ls "$input"/ | cut -f 1 -d "_" | sort -n | uniq ); do
 
 #if not already merged
-if [ ! -f /home/beissing/BAMLINKS/"$i"_merged.bam ]
+if [ ! -f "$output"/"$i"_merged.bam ]
 then
 
-	if [ $( ls -1 /home/beissing/BAMLINKS/$i* | wc -l ) -gt 1 ]
+	if [ $( ls -1 "$input"/$i* | wc -l ) -gt 1 ]
 	then
-		samtools merge -r /home/beissing/BAMLINKS/"$i"_merged.bam $( ls /home/beissing/BAMLINKS/$i* | perl -ne '{BEGIN} chomp; print "$_\t"; while(<>){ chomp; print "$_\t";}; {END} chomp; print $_;')
-		samtools index /home/beissing/BAMLINKS/"$i"_merged.bam
+		samtools merge -r "$input"/"$i"_merged.bam $( ls "$input"/$i* | perl -ne '{BEGIN} chomp; print "$_\t"; while(<>){ chomp; print "$_\t";}; {END} chomp; print $_;')
+		samtools index  "$input"/"$i"_merged.bam
 	else
-		mv $( ls -1 /home/beissing/BAMLINKS/$i*  ) /home/beissing/v3_bams_bwamem/"$i"_merged.bam;
-		samtools index /home/beissing/BAMLINKS/"$i"_merged.bam
+		mv $( ls -1 "$input"/$i*  ) "$input"/"$i"_merged.bam;
+		samtools index "$input"/"$i"_merged.bam
 	fi;
 else 
- 	if [ ! -f /home/beissing/BAMLINKS/"$i"_merged.bam.bai ]
+ 	if [ ! -f "$input"/"$i"_merged.bam.bai ]
 	then
-		samtools index /home/beissing/BAMLINKS/"$i"_merged.bam
+		samtools index "$input"/"$i"_merged.bam
 	fi;
 fi;
 

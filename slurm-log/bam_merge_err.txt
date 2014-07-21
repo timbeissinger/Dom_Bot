@@ -1,2 +1,47 @@
 Module BUILD 1.6 Loaded.
 Module slurm/2.6.2 loaded 
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+open: No such file or directory
+[bam_index_build2] fail to open the BAM file.
+[bam_header_read] EOF marker is absent. The input is probably truncated.
+[bam_header_read] invalid BAM binary header (this is not a BAM file).
+[bam_header_read] EOF marker is absent. The input is probably truncated.
+[bam_header_read] invalid BAM binary header (this is not a BAM file).
+/var/spool/slurmd/job1087679/slurm_script: line 16: 35115 Segmentation fault      (core dumped) samtools merge -r "$input"/"$i"_merged.bam $( ls "$input"/$i* | perl -ne '{BEGIN} chomp; print "$_\t"; while(<>){ chomp; print "$_\t";}; {END} chomp; print $_;')

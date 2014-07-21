@@ -1,9 +1,9 @@
 #!/bin/bash -l
 #SBATCH -D /home/beissing/Dom_Bot_Git
 #SBATCH -J 2dsfs
-#SBATCH -o slurm-log/2dsfs.out
+#SBATCH -o slurm-log/2dsfs_%j.out
 #SBATCH -p bigmem
-#SBATCH -e slurm-log/2dsfs.err
+#SBATCH -e slurm-log/2dsfs_%j.err
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=32
 set -e
@@ -45,14 +45,14 @@ range="10:1-10000000"
 
 # Next, extract the compressed files
 
-command1=""$outputdir"/"$pop1".saf.pos.gz "
-command2=""$outputdir"/"$pop2".saf.pos.gz "
-echo gunzip $command1
-echo
-echo gunzip $command2
-echo
+#command1=""$outputdir"/"$pop1".saf.pos.gz "
+#command2=""$outputdir"/"$pop2".saf.pos.gz "
+#echo gunzip $command1
+#echo
+#echo gunzip $command2
+#echo
 #gunzip $command1
-gunzip $command2
+#gunzip $command2
 
 # Now we find the positions that occur in both populations using the
 # uniq POSIX program
