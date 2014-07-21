@@ -123,3 +123,212 @@ Module slurm/2.6.2 loaded
 	-> Printing at chr: 10 pos:6509669 chunknumber 11100
 	-> Printing at chr: 10 pos:6658160 chunknumber 11200
 	-> Printing at chr: 10 pos:6752001 chunknumber 11300
+	-> Printing at chr: 10 pos:6874645 chunknumber 11400
+	-> Printing at chr: 10 pos:6931743 chunknumber 11500
+	-> Printing at chr: 10 pos:6991151 chunknumber 11600
+	-> Printing at chr: 10 pos:7111084 chunknumber 11700
+	-> Printing at chr: 10 pos:7136735 chunknumber 11800
+	-> Printing at chr: 10 pos:7200214 chunknumber 11900
+	-> Printing at chr: 10 pos:7310901 chunknumber 12000
+	-> Printing at chr: 10 pos:7455383 chunknumber 12100
+	-> Printing at chr: 10 pos:7569879 chunknumber 12200
+	-> Printing at chr: 10 pos:7593366 chunknumber 12300
+	-> Printing at chr: 10 pos:7648082 chunknumber 12400
+	-> Printing at chr: 10 pos:7723107 chunknumber 12500
+	-> Printing at chr: 10 pos:7872680 chunknumber 12600
+	-> Printing at chr: 10 pos:7987577 chunknumber 12700
+	-> Printing at chr: 10 pos:8104447 chunknumber 12800
+	-> Printing at chr: 10 pos:8143775 chunknumber 12900
+	-> Printing at chr: 10 pos:8165119 chunknumber 13000
+	-> Printing at chr: 10 pos:8216049 chunknumber 13100
+	-> Printing at chr: 10 pos:8251927 chunknumber 13200
+	-> Printing at chr: 10 pos:8279094 chunknumber 13300
+	-> Printing at chr: 10 pos:8406815 chunknumber 13400
+	-> Printing at chr: 10 pos:8498846 chunknumber 13500
+	-> Printing at chr: 10 pos:8588141 chunknumber 13600
+	-> Printing at chr: 10 pos:8664094 chunknumber 13700
+	-> Printing at chr: 10 pos:8722197 chunknumber 13800
+	-> Printing at chr: 10 pos:8804840 chunknumber 13900
+	-> Printing at chr: 10 pos:8823334 chunknumber 14000
+	-> Printing at chr: 10 pos:8844809 chunknumber 14100
+	-> Printing at chr: 10 pos:8924957 chunknumber 14200
+	-> Printing at chr: 10 pos:9106970 chunknumber 14300
+	-> Printing at chr: 10 pos:9241843 chunknumber 14400
+	-> Printing at chr: 10 pos:9352266 chunknumber 14500
+	-> Printing at chr: 10 pos:9404693 chunknumber 14600
+	-> Printing at chr: 10 pos:9471663 chunknumber 14700
+	-> Printing at chr: 10 pos:9528945 chunknumber 14800
+	-> Printing at chr: 10 pos:9591256 chunknumber 14900
+	-> Printing at chr: 10 pos:9650883 chunknumber 15000
+	-> Printing at chr: 10 pos:9847778 chunknumber 15100
+	-> Printing at chr: 10 pos:9882758 chunknumber 15200
+	-> Printing at chr: 10 pos:9921430 chunknumber 15300
+	-> Printing at chr: 10 pos:9974213 chunknumber 15400
+	-> Printing at chr: 10 pos:9992144 chunknumber 15500
+
+	-> Done reading data waiting for calculations to finish
+	-> Calling destroy
+	-> Done waiting for threads
+	-> Output filenames:
+		->"/home/beissing/Dom_Bot_Git/TEMP/TILconditioned.arg"
+		->"/home/beissing/Dom_Bot_Git/TEMP/TILconditioned.mafs.gz"
+		->"/home/beissing/Dom_Bot_Git/TEMP/TILconditioned.saf"
+		->"/home/beissing/Dom_Bot_Git/TEMP/TILconditioned.saf.pos.gz"
+	-> Mon Jul 21 14:49:46 2014
+	-> Arguments and parameters for all analysis are located in .arg file
+	[ALL done] cpu-time used =  2365.23 sec
+	[ALL done] walltime used =  2172.00 sec
+	-> [abcFilter.cpp] Reading binary representation:/home/beissing/Dom_Bot_Git/TEMP/intersect.TIL.BKN.txt
+	-> [abcFilter.cpp] nChr: 1 loaded from binary filter file
+	-> [abcFilter.cpp] -sites is still beta, use at own risk...
+	-> Reading fasta: DATA/TRIP/TRIP.fa.gz
+	-> Reading fasta: /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 23 number of samples 
+	-> Printing at chr: 10 pos:179900 chunknumber 100
+	-> Printing at chr: 10 pos:427466 chunknumber 200
+	-> Printing at chr: 10 pos:861995 chunknumber 300
+	-> Printing at chr: 10 pos:1081024 chunknumber 400
+	-> Printing at chr: 10 pos:1406288 chunknumber 500
+	-> Printing at chr: 10 pos:1716976 chunknumber 600
+	-> Printing at chr: 10 pos:1921251 chunknumber 700
+	-> Printing at chr: 10 pos:2171320 chunknumber 800
+	-> Printing at chr: 10 pos:2595923 chunknumber 900
+	-> Printing at chr: 10 pos:2991132 chunknumber 1000
+	-> Printing at chr: 10 pos:3377249 chunknumber 1100
+	-> Printing at chr: 10 pos:3686702 chunknumber 1200
+	-> Printing at chr: 10 pos:4141291 chunknumber 1300
+	-> Printing at chr: 10 pos:4456209 chunknumber 1400
+	-> Printing at chr: 10 pos:4671861 chunknumber 1500
+	-> Printing at chr: 10 pos:4913613 chunknumber 1600
+	-> Printing at chr: 10 pos:5308954 chunknumber 1700
+	-> Printing at chr: 10 pos:5533686 chunknumber 1800
+	-> Printing at chr: 10 pos:5910692 chunknumber 1900
+	-> Printing at chr: 10 pos:6339099 chunknumber 2000
+	-> Printing at chr: 10 pos:6491074 chunknumber 2100
+	-> Printing at chr: 10 pos:6897263 chunknumber 2200
+	-> Printing at chr: 10 pos:7061228 chunknumber 2300
+	-> Printing at chr: 10 pos:7419774 chunknumber 2400
+	-> Printing at chr: 10 pos:7741497 chunknumber 2500
+	-> Printing at chr: 10 pos:7953730 chunknumber 2600
+	-> Printing at chr: 10 pos:8223934 chunknumber 2700
+	-> Printing at chr: 10 pos:8790692 chunknumber 2800
+	-> Printing at chr: 10 pos:9101716 chunknumber 2900
+	-> Printing at chr: 10 pos:9404015 chunknumber 3000
+	-> Printing at chr: 10 pos:9898633 chunknumber 3100
+
+	-> Done reading data waiting for calculations to finish
+	-> Calling destroy
+	-> Done waiting for threads
+	-> Output filenames:
+		->"/home/beissing/Dom_Bot_Git/TEMP/BKNconditioned.arg"
+		->"/home/beissing/Dom_Bot_Git/TEMP/BKNconditioned.mafs.gz"
+		->"/home/beissing/Dom_Bot_Git/TEMP/BKNconditioned.saf"
+		->"/home/beissing/Dom_Bot_Git/TEMP/BKNconditioned.saf.pos.gz"
+	-> Mon Jul 21 15:12:11 2014
+	-> Arguments and parameters for all analysis are located in .arg file
+	[ALL done] cpu-time used =  1575.43 sec
+	[ALL done] walltime used =  1345.00 sec
+fname1:/home/beissing/Dom_Bot_Git/TEMP/TILconditioned.saffname2:/home/beissing/Dom_Bot_Git/TEMP/BKNconditioned.saf chr1:30 chr2:46 startsfs:(null) nThreads=32 tole=0.000001 maxIter=100 nSites:-1
+startlik=-7202173.577110
+[0] lik=-325064.124848 diff=6.87711e+06
+[1] lik=-324121.267272 diff=942.858
+[2] lik=-324095.019009 diff=26.2483
+[3] lik=-324085.070161 diff=9.94885
+[4] lik=-324079.601760 diff=5.4684
+[5] lik=-324076.268431 diff=3.33333
+[6] lik=-324074.089905 diff=2.17853
+[7] lik=-324072.587121 diff=1.50278
+[8] lik=-324071.504895 diff=1.08223
+[9] lik=-324070.698022 diff=0.806873
+[10] lik=-324070.079212 diff=0.618811
+[11] lik=-324069.593458 diff=0.485754
+[12] lik=-324069.204664 diff=0.388794
+[13] lik=-324068.888299 diff=0.316364
+[14] lik=-324068.627187 diff=0.261113
+[15] lik=-324068.408984 diff=0.218203
+[16] lik=-324068.224625 diff=0.184359
+[17] lik=-324068.067325 diff=0.1573
+[18] lik=-324067.931922 diff=0.135403
+[19] lik=-324067.814429 diff=0.117493
+[20] lik=-324067.711732 diff=0.102698
+[21] lik=-324067.621366 diff=0.090366
+[22] lik=-324067.541363 diff=0.0800029
+[23] lik=-324067.470135 diff=0.0712273
+[24] lik=-324067.406393 diff=0.0637427
+[25] lik=-324067.349076 diff=0.0573171
+[26] lik=-324067.297309 diff=0.0517664
+[27] lik=-324067.250366 diff=0.0469436
+[28] lik=-324067.207635 diff=0.0427306
+[29] lik=-324067.168604 diff=0.0390315
+[30] lik=-324067.132836 diff=0.035768
+[31] lik=-324067.099960 diff=0.032876
+[32] lik=-324067.069657 diff=0.0303024
+[33] lik=-324067.041654 diff=0.0280029
+[34] lik=-324067.015713 diff=0.0259408
+[35] lik=-324066.991628 diff=0.0240851
+[36] lik=-324066.969219 diff=0.0224095
+[37] lik=-324066.948327 diff=0.0208918
+[38] lik=-324066.928814 diff=0.0195132
+[39] lik=-324066.910557 diff=0.0182574
+[40] lik=-324066.893446 diff=0.0171105
+[41] lik=-324066.877386 diff=0.0160604
+[42] lik=-324066.862289 diff=0.0150968
+[43] lik=-324066.848078 diff=0.0142106
+[44] lik=-324066.834684 diff=0.0133939
+[45] lik=-324066.822045 diff=0.0126397
+[46] lik=-324066.810103 diff=0.011942
+[47] lik=-324066.798807 diff=0.0112953
+[48] lik=-324066.788112 diff=0.010695
+[49] lik=-324066.777975 diff=0.0101369
+[50] lik=-324066.768358 diff=0.00961713
+[51] lik=-324066.759226 diff=0.00913244
+[52] lik=-324066.750546 diff=0.00867982
+[53] lik=-324066.742289 diff=0.00825661
+[54] lik=-324066.734429 diff=0.00786038
+[55] lik=-324066.726940 diff=0.00748899
+[56] lik=-324066.719800 diff=0.00714048
+[57] lik=-324066.712986 diff=0.00681308
+[58] lik=-324066.706481 diff=0.00650519
+[59] lik=-324066.700266 diff=0.00621535
+[60] lik=-324066.694324 diff=0.00594225
+[61] lik=-324066.688639 diff=0.00568466
+[62] lik=-324066.683198 diff=0.00544152
+[63] lik=-324066.677986 diff=0.00521177
+[64] lik=-324066.672991 diff=0.00499453
+[65] lik=-324066.668202 diff=0.00478894
+[66] lik=-324066.663608 diff=0.00459423
+[67] lik=-324066.659198 diff=0.00440968
+[68] lik=-324066.654964 diff=0.00423463
+[69] lik=-324066.650895 diff=0.00406846
+[70] lik=-324066.646985 diff=0.00391065
+[71] lik=-324066.643224 diff=0.00376065
+[72] lik=-324066.639606 diff=0.00361798
+[73] lik=-324066.636124 diff=0.0034822
+[74] lik=-324066.632771 diff=0.00335293
+[75] lik=-324066.629541 diff=0.00322974
+[76] lik=-324066.626429 diff=0.00311229
+[77] lik=-324066.623429 diff=0.00300026
+[78] lik=-324066.620535 diff=0.00289334
+[79] lik=-324066.617744 diff=0.00279124
+[80] lik=-324066.615050 diff=0.00269368
+[81] lik=-324066.612450 diff=0.00260043
+[82] lik=-324066.609939 diff=0.00251125
+[83] lik=-324066.607513 diff=0.00242591
+[84] lik=-324066.605168 diff=0.00234423
+[85] lik=-324066.602903 diff=0.00226598
+[86] lik=-324066.600711 diff=0.00219103
+[87] lik=-324066.598592 diff=0.00211918
+[88] lik=-324066.596542 diff=0.00205027
+[89] lik=-324066.594558 diff=0.00198417
+[90] lik=-324066.592637 diff=0.00192072
+[91] lik=-324066.590777 diff=0.0018598
+[92] lik=-324066.588976 diff=0.0018013
+[93] lik=-324066.587231 diff=0.00174508
+[94] lik=-324066.585540 diff=0.00169104
+[95] lik=-324066.583901 diff=0.00163908
+[96] lik=-324066.582312 diff=0.00158909
+[97] lik=-324066.580771 diff=0.001541
+[98] lik=-324066.579276 diff=0.00149471
+[99] lik=-324066.577826 diff=0.00145012
+likelihood: -519728.568113
