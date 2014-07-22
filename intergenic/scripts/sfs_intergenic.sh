@@ -39,11 +39,11 @@ regionfile="/home/beissing/Dom_Bot_Git/intergenic/intergenicRegionFile_chr10.txt
 # -setMaxDepth 20 sets max depth to accept -- useful to deal with highly repetitive regions
 # -baq 1=realign locally (I think)
 # -GL $glikehood 1 is samtools, 2 is GATK, 3 SOAPsnp 4 SYK
-# -r 10:1- ony analyze this range (here 1-10000000 on chromosome 10)
+# -rf path to intergenic text file
 # -P 8 use 8 threads
 # -indF individiual inbreeding coefficient. for inbred lines just make a files of "1" on each line for each bamfile. otherwise use ngsF to estimate (see inbreeding.sh script)
 
-command1="-bam DATA/LISTS/"$taxon"_list.txt -out TEMP/"$taxon"_intergenic_10 -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$taxon".indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nInd -minInd $minInd -baq 1 -ref /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -r $range"
+command1="-bam DATA/LISTS/"$taxon"_list.txt -out TEMP/"$taxon"_intergenic_10 -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$taxon".indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nInd -minInd $minInd -baq 1 -ref /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -rf $regionfile"
 echo $command1
 $angsdir/angsd $command1
 
