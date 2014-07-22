@@ -1,9 +1,9 @@
 #!/bin/bash -l
 #SBATCH -D /home/beissing/Dom_Bot_Git
-#SBATCH -J 2dsfs
-#SBATCH -o slurm-log/2dsfs_%j.out
+#SBATCH -J 2dsfs_intergenic
+#SBATCH -o slurm-log/2dsfs_intergenic_%j.out
 #SBATCH -p bigmem
-#SBATCH -e slurm-log/2dsfs_%j.err
+#SBATCH -e slurm-log/2dsfs_intergenic_%j.err
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=32
 set -e
@@ -34,7 +34,7 @@ minIndPop2=$( printf "%.0f" $(echo "scale=2;$minperc*$nIndPop2" | bc))
 glikehood=1
 minMapQ=30
 cpu=32
-range="10:1-10000000"
+regionfile="/home/beissing/Dom_Bot_Git/intergenic/intergenicRegionFile_chr10.txt"
 
 # Script will run ANGSD and calculate 2d sfs for pop1 and pop2 hapmap files
 # have already run ANGSD for pop1 and pop2 individually, output of interest is
@@ -45,8 +45,8 @@ range="10:1-10000000"
 
 # Next, extract the compressed files
 
-#command1=""$outputdir"/"$pop1".saf.pos.gz "
-#command2=""$outputdir"/"$pop2".saf.pos.gz "
+#command1=""$outputdir"/"$pop1"_intergenic_10.saf.pos.gz "
+#command2=""$outputdir"/"$pop2"_intergenic_10.saf.pos.gz "
 #echo gunzip $command1
 #echo
 #echo gunzip $command2
@@ -57,20 +57,20 @@ range="10:1-10000000"
 # Now we find the positions that occur in both populations using the
 # uniq POSIX program
 
-command3=" "$outputdir"/"$pop1".saf.pos "$outputdir"/"$pop2".saf.pos|sort|uniq -d >"$outputdir"/intersect."$pop1"."$pop2".txt"
+command3=" "$outputdir"/"$pop1"_intergenic_10.saf.pos "$outputdir"/"$pop2"_intergenic_10.saf.pos|sort|uniq -d >"$outputdir"/intersect."$pop1"."$pop2".txt"
 echo cat $command3
 echo 
-cat "$outputdir"/"$pop1".saf.pos "$outputdir"/"$pop2".saf.pos|sort|uniq -d >"$outputdir"/intersect."$pop1"."$pop2".txt
+cat "$outputdir"/"$pop1"_intergenic_10.saf.pos "$outputdir"/"$pop2"_intergenic_10.saf.pos|sort|uniq -d >"$outputdir"/intersect."$pop1"."$pop2"_intergenic_10.txt
 
 # Now redo angsd sample allele frequency calculation by conditioning on
 # the sites that occur in both populations.
 
-command4=" -bam DATA/LISTS/"$pop1"_list.txt -out "$outputdir"/"$pop1"conditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$pop1".indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nIndPop1 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -r $range -sites "$outputdir"/intersect."$pop1"."$pop2".txt"
+command4=" -bam DATA/LISTS/"$pop1"_list.txt -out "$outputdir"/"$pop1"_intergenic_10_conditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$pop1".indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nIndPop1 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -rf $regionfile -sites "$outputdir"/intersect."$pop1"."$pop2"_intergenic_10.txt"
 echo "$angsdir"/angsd $command4
 echo 
 "$angsdir"/angsd $command4
 
-command5=" -bam DATA/LISTS/"$pop2"_list.txt -out "$outputdir"/"$pop2"conditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$pop2".indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nIndPop2 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -r $range -sites "$outputdir"/intersect."$pop1"."$pop2".txt"
+command5=" -bam DATA/LISTS/"$pop2"_list.txt -out "$outputdir"/"$pop2"_intergenic_10_conditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$pop2".indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nIndPop2 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -r $range -sites "$outputdir"/intersect."$pop1"."$pop2"_intergenic_10.txt"
 echo "$angsdir"/angsd $command5
 echo 
 "$angsdir"/angsd $command5
@@ -78,7 +78,7 @@ echo
 
 
 # Now we estimate the joint sfs using the realSFS program
-command6=" 2dsfs "$outputdir"/"$pop1"conditioned.saf "$outputdir"/"$pop2"conditioned.saf $nPop1 $nPop2 -P $cpu"
-echo "$angsdir"/misc/realSFS $command6 " > SFS/2dsfs."$pop1"."$pop2".sfs"
+command6=" 2dsfs "$outputdir"/"$pop1"_intergenic_10_conditioned.saf "$outputdir"/"$pop2"_intergenic_10_conditioned.saf $nPop1 $nPop2 -P $cpu"
+echo "$angsdir"/misc/realSFS $command6 " > SFS/2dsfs_intergenic."$pop1"."$pop2".sfs"
 echo 
-"$angsdir"/misc/realSFS $command6  > SFS/2dsfs."$pop1"."$pop2".sfs
+"$angsdir"/misc/realSFS $command6  > SFS/2dsfs_intergenic."$pop1"."$pop2".sfs
