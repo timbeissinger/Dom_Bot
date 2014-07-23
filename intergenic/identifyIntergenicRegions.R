@@ -76,7 +76,7 @@ gap <- genesMod$start_position-c(0,genesMod$end_position[-nrow(genesMod)]) # tes
 
 regions <- list()
 for(i in 1:10){
-    temp <- cbind(rep(paste("chr", genesMod$chromosome_name[which(genesMod$chromosome_name==i)[1]],
+    temp <- cbind(rep(paste(genesMod$chromosome_name[which(genesMod$chromosome_name==i)[1]],
                               ":",sep=""),{length(which(genesMod$chromosome_name==i))+1}),
                               paste(c(1,genesMod$end_position[which(genesMod$chromosome_name==i)]),
                               "-",c(genesMod$start_position[which(genesMod$chromosome_name==i)]," "),
