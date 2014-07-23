@@ -18,11 +18,21 @@ sfsBKN <- exp(scan("BKN.sfs"))*10000000
 sfsTIL <- exp(scan("TIL.sfs"))*10000000
 sfs2d <- exp(read.table( "2dsfs.TIL.BKN.sfs",header=F,stringsAsFactors=F))*10000000
 
+sfsBKN_intergenic<- exp(scan("BKN_intergenic_10.sfs"))*10000000
+sfsTIL_intergenic<- exp(scan("TIL_intergenic_10.sfs"))*10000000
+
+
 ### Plot the sfs by population
 pdf("SFS_Plots_individual_pops.pdf")
-barplot(sfsBKN[2:{length(sfsBKN)-1}],main="Landrace SFS")
-barplot(sfsTIL[2:{length(sfsTIL)-1}],main="Teosinte SFS")
+barplot(sfsBKN[2:{length(sfsBKN)-1}],main="Landrace SFS (First 10 Mb on chr. 10)")
+barplot(sfsTIL[2:{length(sfsTIL)-1}],main="Teosinte SFS (First 10 Mb on chr. 10)")
 dev.off()
+
+pdf("SFS_Plots_individual_pops_intergenic_10.pdf")
+barplot(sfsBKN_intergenic[2:{length(sfsBKN_intergenic)-1}],main="Landrace SFS (All of chr. 10 non-genic)")
+barplot(sfsTIL_intergenic[2:{length(sfsTIL_intergenic)-1}],main="Teosinte SFS (All of chr. 10 non-genic)")
+dev.off()
+
 
 ### Make a 2d sfs matrix
 sfs2d.mat <- as.matrix(sfs2d)
