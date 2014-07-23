@@ -3,10 +3,10 @@
 #SBATCH -D /home/beissing/Dom_Bot_Git
 #SBATCH -J sfs_intergenic
 #SBATCH -o slurm-log/sfs_intergenic_%j.out
-#SBATCH -p serial
+#SBATCH -p bigmem
 #SBATCH -e slurm-log/sfs_intergenic_%j.err
 #SBATCH --nodes=1
-#############SBATCH --ntasks-per-node=32
+#SBATCH --ntasks-per-node=32
 
 # script to run ANGSD on hapmap2 bam files
 module load angsd
