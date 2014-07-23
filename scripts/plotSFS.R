@@ -14,12 +14,12 @@ setwd("~/Documents/DomesticationBottleneck/Dom_Bot/SFS/")
 library(gplots)
 
 ### Read in the spectra
-sfsBKN <- exp(scan("BKN.sfs"))*10000000
-sfsTIL <- exp(scan("TIL.sfs"))*10000000
-sfs2d <- exp(read.table( "2dsfs.TIL.BKN.sfs",header=F,stringsAsFactors=F))*10000000
+sfsBKN <- exp(scan("BKN.sfs"))
+sfsTIL <- exp(scan("TIL.sfs"))
+sfs2d <- exp(read.table( "2dsfs.TIL.BKN.sfs",header=F,stringsAsFactors=F))
 
-sfsBKN_intergenic<- exp(scan("BKN_intergenic_10.sfs"))*10000000
-sfsTIL_intergenic<- exp(scan("TIL_intergenic_10.sfs"))*10000000
+sfsBKN_intergenic<- exp(scan("BKN_intergenic_10.sfs"))
+sfsTIL_intergenic<- exp(scan("TIL_intergenic_10.sfs"))
 
 
 ### Plot the sfs by population
