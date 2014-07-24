@@ -1,0 +1,2 @@
+-bam DATA/LISTS/TIL_list.txt -out /home/beissing/Dom_Bot_Git/TEMP/TIL_genic_10 -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/TIL.indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ 30 -minQ 20 -nInd 15 -minInd 12 -baq 1 -ref /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa -GL 1 -P 32 -rf /home/beissing/Dom_Bot_Git/genic/genicRegionFile_chr10.txt
+/home/beissing/Dom_Bot_Git/TEMP/TIL_genic_10.saf 30 -P 32
