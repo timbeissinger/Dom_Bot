@@ -21,6 +21,9 @@ sfs2d <- exp(read.table( "2dsfs.TIL.BKN.sfs",header=F,stringsAsFactors=F))
 sfsBKN_intergenic<- exp(scan("BKN_intergenic_10.sfs"))
 sfsTIL_intergenic<- exp(scan("TIL_intergenic_10.sfs"))
 
+sfsBKN_genic<- exp(scan("BKN_genic_10.sfs"))
+sfsTIL_genic<- exp(scan("TIL_genic_10.sfs"))
+
 
 ### Plot the sfs by population
 pdf("SFS_Plots_individual_pops.pdf")
@@ -32,6 +35,58 @@ pdf("SFS_Plots_individual_pops_intergenic_10.pdf")
 barplot(sfsBKN_intergenic[2:{length(sfsBKN_intergenic)-1}],main="Landrace SFS (All of chr. 10 non-genic)")
 barplot(sfsTIL_intergenic[2:{length(sfsTIL_intergenic)-1}],main="Teosinte SFS (All of chr. 10 non-genic)")
 dev.off()
+
+pdf("SFS_Plots_individual_pops_genic_10.pdf")
+barplot(sfsBKN_genic[2:{length(sfsBKN_genic)-1}],main="Landrace SFS (All of chr. 10 genic)")
+barplot(sfsTIL_genic[2:{length(sfsTIL_genic)-1}],main="Teosinte SFS (All of chr. 10 genic)")
+dev.off()
+
+
+### Barplots comparing genic 10 and intergenic 10
+sfsBKN_comp_10 <- rbind(sfsBKN_genic,sfsBKN_intergenic)[,seq(1,47,2)]
+colnames(sfsBKN_comp_10) <- 0:23
+sfsTIL_comp_10 <- rbind(sfsTIL_genic,sfsTIL_intergenic)[,seq(1,31,2)]
+colnames(sfsTIL_comp_10) <- 0:15
+
+pdf("SFS_compare_10.pdf")
+barplot(sfsBKN_comp_10[,2:{ncol(sfsBKN_comp_10)-1}],beside=T,col=c("red","blue"),
+        main="Landrace chromosome 10 sfs",
+        xlab="No. of Haplotypes containing derived allele", ylab="Proportion")
+legend("topright","(x,y)",col=c("red","blue"),pch=15,c("Genic sequences",
+                                                  "Non-genic sequences"))
+barplot(sfsTIL_comp_10[,2:{ncol(sfsTIL_comp_10)-1}],beside=T,col=c("red","blue"),
+        main="Teosinte chromosome 10 sfs",
+        xlab="No. of Haplotypes containing derived allele", ylab="Proportion")
+legend("topright","(x,y)",col=c("red","blue"),pch=15,c("Genic sequences",
+                                                  "Non-genic sequences"))
+dev.off()
+
+
+
+
+
+
+
+########################################################################
+### Plots including fixed #######
+
+barplot(sfsBKN_comp_10,beside=T,col=c("red","blue"),
+        main="Landrace chromosome 10 sfs",
+        xlab="No. of Haplotypes containing derived allele", ylab="Proportion")
+legend("topright","(x,y)",col=c("red","blue"),pch=15,c("Genic sequences",
+                                                  "Non-genic sequences"))
+barplot(sfsTIL_comp_10,beside=T,col=c("red","blue"),
+        main="Teosinte chromosome 10 sfs",
+        xlab="No. of Haplotypes containing derived allele", ylab="Proportion")
+legend("topright","(x,y)",col=c("red","blue"),pch=15,c("Genic sequences",
+                                                  "Non-genic sequences"))
+
+########################################################################
+
+
+
+
+
 
 
 ### Make a 2d sfs matrix
