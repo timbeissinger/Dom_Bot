@@ -1,0 +1,76 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.2 loaded 
+	-> Filterfile: /home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_genic_10.txt supplied will generate binary representations...
+	-> Parsing chr:'10'
+	-> Filtering complete: Observed: 1 different chromosomes from file:/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_genic_10.txt
+	-> [abcFilter.cpp] Reading binary representation:/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_genic_10.txt
+	-> [abcFilter.cpp] nChr: 1 loaded from binary filter file
+	-> [abcFilter.cpp] -sites is still beta, use at own risk...
+	-> Reading fasta: DATA/TRIP/TRIP.fa.gz
+	-> Reading fasta: /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 23 number of samples 
+	-> Printing at chr: 10 pos:1347854 chunknumber 100
+	-> Printing at chr: 10 pos:1948805 chunknumber 200
+	-> Printing at chr: 10 pos:2256162 chunknumber 300
+	-> Printing at chr: 10 pos:2795506 chunknumber 400
+	-> Printing at chr: 10 pos:3396644 chunknumber 500
+	-> Printing at chr: 10 pos:4069989 chunknumber 600
+	-> Printing at chr: 10 pos:4597553 chunknumber 700
+	-> Printing at chr: 10 pos:4913300 chunknumber 800
+	-> Printing at chr: 10 pos:5537091 chunknumber 900
+	-> Printing at chr: 10 pos:6359496 chunknumber 1000
+	-> Printing at chr: 10 pos:7402747 chunknumber 1100
+	-> Printing at chr: 10 pos:8452981 chunknumber 1200
+	-> Printing at chr: 10 pos:9384347 chunknumber 1300
+	-> Printing at chr: 10 pos:10290765 chunknumber 1400
+	-> Printing at chr: 10 pos:10833601 chunknumber 1500
+	-> Printing at chr: 10 pos:12647398 chunknumber 1600
+	-> Printing at chr: 10 pos:13477230 chunknumber 1700
+	-> Printing at chr: 10 pos:14525056 chunknumber 1800
+	-> Printing at chr: 10 pos:15560367 chunknumber 1900
+	-> Printing at chr: 10 pos:17174278 chunknumber 2000
+	-> Printing at chr: 10 pos:18341549 chunknumber 2100
+	-> Printing at chr: 10 pos:19525977 chunknumber 2200
+	-> Printing at chr: 10 pos:21029384 chunknumber 2300
+	-> Printing at chr: 10 pos:23181276 chunknumber 2400
+	-> Printing at chr: 10 pos:24959328 chunknumber 2500
+	-> Printing at chr: 10 pos:26145130 chunknumber 2600
+	-> Printing at chr: 10 pos:27550974 chunknumber 2700
+	-> Printing at chr: 10 pos:30201516 chunknumber 2800
+	-> Printing at chr: 10 pos:31985737 chunknumber 2900
+	-> Printing at chr: 10 pos:34510617 chunknumber 3000
+	-> Printing at chr: 10 pos:36259684 chunknumber 3100
+	-> Printing at chr: 10 pos:37920840 chunknumber 3200
+	-> Printing at chr: 10 pos:39970490 chunknumber 3300
+	-> Printing at chr: 10 pos:44460007 chunknumber 3400
+	-> Printing at chr: 10 pos:47775714 chunknumber 3500
+	-> Printing at chr: 10 pos:49281025 chunknumber 3600
+	-> Printing at chr: 10 pos:52234366 chunknumber 3700
+	-> Printing at chr: 10 pos:54111930 chunknumber 3800
+	-> Printing at chr: 10 pos:55662172 chunknumber 3900
+	-> Printing at chr: 10 pos:57105321 chunknumber 4000
+	-> Printing at chr: 10 pos:58301224 chunknumber 4100
+	-> Printing at chr: 10 pos:59669631 chunknumber 4200
+	-> Printing at chr: 10 pos:61396723 chunknumber 4300
+	-> Printing at chr: 10 pos:63634186 chunknumber 4400
+	-> Printing at chr: 10 pos:65630299 chunknumber 4500
+	-> Printing at chr: 10 pos:66652357 chunknumber 4600
+	-> Printing at chr: 10 pos:68938927 chunknumber 4700
+	-> Printing at chr: 10 pos:70236341 chunknumber 4800
+	-> Printing at chr: 10 pos:71474680 chunknumber 4900
+	-> Printing at chr: 10 pos:72815964 chunknumber 5000
+	-> Printing at chr: 10 pos:74343397 chunknumber 5100
+	-> Printing at chr: 10 pos:75828311 chunknumber 5200
+	-> Printing at chr: 10 pos:77458701 chunknumber 5300
+	-> Printing at chr: 10 pos:78843610 chunknumber 5400
+	-> Printing at chr: 10 pos:80419760 chunknumber 5500
+	-> Printing at chr: 10 pos:81033351 chunknumber 5600
+	-> Printing at chr: 10 pos:82120363 chunknumber 5700
+	-> Printing at chr: 10 pos:83556775 chunknumber 5800
+	-> Printing at chr: 10 pos:84270366 chunknumber 5900
+	-> Printing at chr: 10 pos:85332939 chunknumber 6000
+	-> Printing at chr: 10 pos:86529423 chunknumber 6100
+	-> Printing at chr: 10 pos:88284045 chunknumber 6200
+	-> Printing at chr: 10 pos:89082654 chunknumber 6300
+	-> Printing at chr: 10 pos:89999125 chunknumber 6400
