@@ -65,12 +65,12 @@ cat "$outputdir"/"$pop1"_genic_10.saf.pos "$outputdir"/"$pop2"_genic_10.saf.pos|
 # Now redo angsd sample allele frequency calculation by conditioning on
 # the sites that occur in both populations.
 
-command4=" -bam DATA/LISTS/"$pop1"_list.txt -out "$outputdir"/"$pop1"_genic_10_conditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$pop1".indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nIndPop1 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -rf $regionfile -sites "$outputdir"/intersect."$pop1"."$pop2"_genic_10.txt"
+command4=" -bam DATA/LISTS/"$pop1"_list.txt -out "$outputdir"/"$pop1"_genic_10_conditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$pop1".indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nIndPop1 -minInd $minIndPop1 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -rf $regionfile -sites "$outputdir"/intersect."$pop1"."$pop2"_genic_10.txt"
 echo "$angsdir"/angsd $command4
 echo 
 "$angsdir"/angsd $command4
 
-command5=" -bam DATA/LISTS/"$pop2"_list.txt -out "$outputdir"/"$pop2"_genic_10_conditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$pop2".indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nIndPop2 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -r $range -sites "$outputdir"/intersect."$pop1"."$pop2"_genic_10.txt"
+command5=" -bam DATA/LISTS/"$pop2"_list.txt -out "$outputdir"/"$pop2"_genic_10_conditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/"$pop2".indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ $minMapQ -minQ 20 -nInd $nIndPop2 -minInd $minIndPop2 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL $glikehood -P $cpu -rf $regionfile -sites "$outputdir"/intersect."$pop1"."$pop2"_genic_10.txt"
 echo "$angsdir"/angsd $command5
 echo 
 "$angsdir"/angsd $command5

@@ -1,0 +1,31 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.2 loaded 
+	-> Reading fasta: DATA/TRIP/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 23 number of samples 
+	-> Printing at chr: 10 pos:179900 chunknumber 100
+	-> Printing at chr: 10 pos:468184 chunknumber 200
+	-> Printing at chr: 10 pos:960442 chunknumber 300
+	-> Printing at chr: 10 pos:1390752 chunknumber 400
+	-> Printing at chr: 10 pos:1779466 chunknumber 500
+	-> Printing at chr: 10 pos:2489788 chunknumber 600
+	-> Printing at chr: 10 pos:3127918 chunknumber 700
+	-> Printing at chr: 10 pos:3775969 chunknumber 800
+	-> Printing at chr: 10 pos:4404157 chunknumber 900
+	-> Printing at chr: 10 pos:4981159 chunknumber 1000
+	-> Printing at chr: 10 pos:5409421 chunknumber 1100
+	-> Printing at chr: 10 pos:6053817 chunknumber 1200
+	-> Printing at chr: 10 pos:6464558 chunknumber 1300
+	-> Printing at chr: 10 pos:6920986 chunknumber 1400
+	-> Printing at chr: 10 pos:7206855 chunknumber 1500
+	-> Printing at chr: 10 pos:7726297 chunknumber 1600
+	-> Printing at chr: 10 pos:8107488 chunknumber 1700
+	-> Printing at chr: 10 pos:8271370 chunknumber 1800
+	-> Printing at chr: 10 pos:9057599 chunknumber 1900
+	-> Printing at chr: 10 pos:9469856 chunknumber 2000
+	-> Printing at chr: 10 pos:10080827 chunknumber 2100
+	-> Printing at chr: 10 pos:10533030 chunknumber 2200
+	-> Printing at chr: 10 pos:10914467 chunknumber 2300
+	-> Printing at chr: 10 pos:11029222 chunknumber 2400
+	-> Printing at chr: 10 pos:11267249 chunknumber 2500

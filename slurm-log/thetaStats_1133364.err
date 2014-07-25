@@ -1,0 +1,169 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.2 loaded 
+	-> Reading fasta: DATA/TRIP/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 23 number of samples 
+	-> Printing at chr: 10 pos:1347854 chunknumber 100
+	-> Printing at chr: 10 pos:1948805 chunknumber 200
+	-> Printing at chr: 10 pos:2256162 chunknumber 300
+	-> Printing at chr: 10 pos:2795506 chunknumber 400
+	-> Printing at chr: 10 pos:3396644 chunknumber 500
+	-> Printing at chr: 10 pos:4069989 chunknumber 600
+	-> Printing at chr: 10 pos:4597553 chunknumber 700
+	-> Printing at chr: 10 pos:4913300 chunknumber 800
+	-> Printing at chr: 10 pos:5537091 chunknumber 900
+	-> Printing at chr: 10 pos:6359496 chunknumber 1000
+	-> Printing at chr: 10 pos:7402747 chunknumber 1100
+	-> Printing at chr: 10 pos:8452981 chunknumber 1200
+	-> Printing at chr: 10 pos:9384347 chunknumber 1300
+	-> Printing at chr: 10 pos:10290765 chunknumber 1400
+	-> Printing at chr: 10 pos:10833601 chunknumber 1500
+	-> Printing at chr: 10 pos:12647398 chunknumber 1600
+	-> Printing at chr: 10 pos:13477230 chunknumber 1700
+	-> Printing at chr: 10 pos:14525056 chunknumber 1800
+	-> Printing at chr: 10 pos:15560367 chunknumber 1900
+	-> Printing at chr: 10 pos:17174278 chunknumber 2000
+	-> Printing at chr: 10 pos:18341549 chunknumber 2100
+	-> Printing at chr: 10 pos:19525977 chunknumber 2200
+	-> Printing at chr: 10 pos:21029384 chunknumber 2300
+	-> Printing at chr: 10 pos:23181276 chunknumber 2400
+	-> Printing at chr: 10 pos:24959328 chunknumber 2500
+	-> Printing at chr: 10 pos:26145130 chunknumber 2600
+	-> Printing at chr: 10 pos:27550974 chunknumber 2700
+	-> Printing at chr: 10 pos:30201516 chunknumber 2800
+	-> Printing at chr: 10 pos:31985737 chunknumber 2900
+	-> Printing at chr: 10 pos:34510617 chunknumber 3000
+	-> Printing at chr: 10 pos:36259684 chunknumber 3100
+	-> Printing at chr: 10 pos:37920840 chunknumber 3200
+	-> Printing at chr: 10 pos:39970490 chunknumber 3300
+	-> Printing at chr: 10 pos:44460007 chunknumber 3400
+	-> Printing at chr: 10 pos:47775714 chunknumber 3500
+	-> Printing at chr: 10 pos:49281025 chunknumber 3600
+	-> Printing at chr: 10 pos:52234366 chunknumber 3700
+	-> Printing at chr: 10 pos:54111930 chunknumber 3800
+	-> Printing at chr: 10 pos:55662172 chunknumber 3900
+	-> Printing at chr: 10 pos:57105321 chunknumber 4000
+	-> Printing at chr: 10 pos:58301224 chunknumber 4100
+	-> Printing at chr: 10 pos:59669631 chunknumber 4200
+	-> Printing at chr: 10 pos:61396723 chunknumber 4300
+	-> Printing at chr: 10 pos:63634186 chunknumber 4400
+	-> Printing at chr: 10 pos:65630299 chunknumber 4500
+	-> Printing at chr: 10 pos:66652357 chunknumber 4600
+	-> Printing at chr: 10 pos:68938927 chunknumber 4700
+	-> Printing at chr: 10 pos:70236341 chunknumber 4800
+	-> Printing at chr: 10 pos:71474680 chunknumber 4900
+	-> Printing at chr: 10 pos:72815964 chunknumber 5000
+	-> Printing at chr: 10 pos:74343397 chunknumber 5100
+	-> Printing at chr: 10 pos:75828311 chunknumber 5200
+	-> Printing at chr: 10 pos:77458701 chunknumber 5300
+	-> Printing at chr: 10 pos:78843610 chunknumber 5400
+	-> Printing at chr: 10 pos:80419760 chunknumber 5500
+	-> Printing at chr: 10 pos:81033351 chunknumber 5600
+	-> Printing at chr: 10 pos:82120363 chunknumber 5700
+	-> Printing at chr: 10 pos:83556775 chunknumber 5800
+	-> Printing at chr: 10 pos:84270366 chunknumber 5900
+	-> Printing at chr: 10 pos:85332939 chunknumber 6000
+	-> Printing at chr: 10 pos:86529423 chunknumber 6100
+	-> Printing at chr: 10 pos:88284045 chunknumber 6200
+	-> Printing at chr: 10 pos:89082654 chunknumber 6300
+	-> Printing at chr: 10 pos:89999125 chunknumber 6400
+	-> Printing at chr: 10 pos:90784966 chunknumber 6500
+	-> Printing at chr: 10 pos:91972264 chunknumber 6600
+	-> Printing at chr: 10 pos:94740626 chunknumber 6700
+	-> Printing at chr: 10 pos:95929504 chunknumber 6800
+	-> Printing at chr: 10 pos:96772524 chunknumber 6900
+	-> Printing at chr: 10 pos:98166841 chunknumber 7000
+	-> Printing at chr: 10 pos:99381158 chunknumber 7100
+	-> Printing at chr: 10 pos:100039506 chunknumber 7200
+	-> Printing at chr: 10 pos:101049121 chunknumber 7300
+	-> Printing at chr: 10 pos:102300171 chunknumber 7400
+	-> Printing at chr: 10 pos:103726150 chunknumber 7500
+	-> Printing at chr: 10 pos:104380452 chunknumber 7600
+	-> Printing at chr: 10 pos:105085541 chunknumber 7700
+	-> Printing at chr: 10 pos:105939897 chunknumber 7800
+	-> Printing at chr: 10 pos:107311148 chunknumber 7900
+	-> Printing at chr: 10 pos:108484908 chunknumber 8000
+	-> Printing at chr: 10 pos:109727023 chunknumber 8100
+	-> Printing at chr: 10 pos:110854223 chunknumber 8200
+	-> Printing at chr: 10 pos:111452980 chunknumber 8300
+	-> Printing at chr: 10 pos:113183973 chunknumber 8400
+	-> Printing at chr: 10 pos:114310913 chunknumber 8500
+	-> Printing at chr: 10 pos:115633157 chunknumber 8600
+	-> Printing at chr: 10 pos:116822499 chunknumber 8700
+	-> Printing at chr: 10 pos:117641282 chunknumber 8800
+	-> Printing at chr: 10 pos:118125322 chunknumber 8900
+	-> Printing at chr: 10 pos:118988810 chunknumber 9000
+	-> Printing at chr: 10 pos:119980166 chunknumber 9100
+	-> Printing at chr: 10 pos:120735443 chunknumber 9200
+	-> Printing at chr: 10 pos:121485176 chunknumber 9300
+	-> Printing at chr: 10 pos:122252891 chunknumber 9400
+	-> Printing at chr: 10 pos:123250521 chunknumber 9500
+	-> Printing at chr: 10 pos:123899544 chunknumber 9600
+	-> Printing at chr: 10 pos:124551549 chunknumber 9700
+	-> Printing at chr: 10 pos:125327368 chunknumber 9800
+	-> Printing at chr: 10 pos:126161281 chunknumber 9900
+	-> Printing at chr: 10 pos:126908126 chunknumber 10000
+	-> Printing at chr: 10 pos:127443737 chunknumber 10100
+	-> Printing at chr: 10 pos:128134207 chunknumber 10200
+	-> Printing at chr: 10 pos:128871199 chunknumber 10300
+	-> Printing at chr: 10 pos:129547377 chunknumber 10400
+	-> Printing at chr: 10 pos:130263286 chunknumber 10500
+	-> Printing at chr: 10 pos:130915261 chunknumber 10600
+	-> Printing at chr: 10 pos:132033060 chunknumber 10700
+	-> Printing at chr: 10 pos:132567448 chunknumber 10800
+	-> Printing at chr: 10 pos:133352436 chunknumber 10900
+	-> Printing at chr: 10 pos:134058306 chunknumber 11000
+	-> Printing at chr: 10 pos:134683555 chunknumber 11100
+	-> Printing at chr: 10 pos:135389417 chunknumber 11200
+	-> Printing at chr: 10 pos:136205295 chunknumber 11300
+	-> Printing at chr: 10 pos:137126566 chunknumber 11400
+	-> Printing at chr: 10 pos:137858384 chunknumber 11500
+	-> Printing at chr: 10 pos:138512812 chunknumber 11600
+	-> Printing at chr: 10 pos:138915432 chunknumber 11700
+	-> Printing at chr: 10 pos:139565267 chunknumber 11800
+	-> Printing at chr: 10 pos:140364238 chunknumber 11900
+	-> Printing at chr: 10 pos:140781360 chunknumber 12000
+	-> Printing at chr: 10 pos:141086806 chunknumber 12100
+	-> Printing at chr: 10 pos:141518876 chunknumber 12200
+	-> Printing at chr: 10 pos:141862225 chunknumber 12300
+	-> Printing at chr: 10 pos:142349165 chunknumber 12400
+	-> Printing at chr: 10 pos:142848697 chunknumber 12500
+	-> Printing at chr: 10 pos:143142762 chunknumber 12600
+	-> Printing at chr: 10 pos:143885348 chunknumber 12700
+	-> Printing at chr: 10 pos:144271957 chunknumber 12800
+	-> Printing at chr: 10 pos:144802593 chunknumber 12900
+	-> Printing at chr: 10 pos:145381215 chunknumber 13000
+	-> Printing at chr: 10 pos:145973871 chunknumber 13100
+	-> Printing at chr: 10 pos:146194507 chunknumber 13200
+	-> Printing at chr: 10 pos:146618827 chunknumber 13300
+	-> Printing at chr: 10 pos:146896892 chunknumber 13400
+	-> Printing at chr: 10 pos:147322572 chunknumber 13500
+	-> Printing at chr: 10 pos:147762362 chunknumber 13600
+	-> Printing at chr: 10 pos:148027197 chunknumber 13700
+	-> Printing at chr: 10 pos:148360478 chunknumber 13800
+	-> Printing at chr: 10 pos:148867935 chunknumber 13900
+
+	-> Done reading data waiting for calculations to finish
+	-> Calling destroy
+	-> Done waiting for threads
+	-> Output filenames:
+		->"THETAS/BKN_genic_10.arg"
+		->"THETAS/BKN_genic_10.mafs.gz"
+		->"THETAS/BKN_genic_10.thetas.gz"
+	-> Thu Jul 24 16:37:08 2014
+	-> Arguments and parameters for all analysis are located in .arg file
+	[ALL done] cpu-time used =  3457.48 sec
+	[ALL done] walltime used =  5115.00 sec
+	Writing: chr:10 with nSites:4040788
+	Done writing: 10
+	Has dumped files:
+		'/home/beissing/Dom_Bot_Git/THETAS/BKN_genic_10.thetas.gz.bin'
+		'/home/beissing/Dom_Bot_Git/THETAS/BKN_genic_10.thetas.gz.idx'
+	Assuming binfile:/home/beissing/Dom_Bot_Git/THETAS/BKN_genic_10.thetas.gz.bin and indexfile:/home/beissing/Dom_Bot_Git/THETAS/BKN_genic_10.thetas.gz.idx
+		Information from index file:
+		0	10	4040788	0
+	 -r=(null) outnames=(null) step: 0 win: 0 nChr:46
+	Winsize equals zero or step size equals zero. Will use entire chromosome as window
+	pc.chr=10 pc.nSites=4040788 firstpos=300326 lastpos=149531492
+	Dumping file: "/home/beissing/Dom_Bot_Git/THETAS/BKN_genic_10.thetas.gz.pestPG"
