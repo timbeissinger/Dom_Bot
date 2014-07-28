@@ -1,6 +1,5 @@
 Module BUILD 1.6 Loaded.
 Module slurm/2.6.2 loaded 
-Module angsd/570 loaded 
 	-> Reading fasta: DATA/TRIP/TRIP.fa.gz
 	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
 	->(Using Filipe modification of: abcSaf.cpp)
@@ -149,34 +148,22 @@ Module angsd/570 loaded
 	-> Calling destroy
 	-> Done waiting for threads
 	-> Output filenames:
-		->"/home/beissing/Dom_Bot_Git/TEMP/BKN_genic_10.arg"
-		->"/home/beissing/Dom_Bot_Git/TEMP/BKN_genic_10.mafs.gz"
-		->"/home/beissing/Dom_Bot_Git/TEMP/BKN_genic_10.saf"
-		->"/home/beissing/Dom_Bot_Git/TEMP/BKN_genic_10.saf.pos.gz"
-	-> Mon Jul 28 13:15:29 2014
+		->"THETAS/BKN_genic_10.arg"
+		->"THETAS/BKN_genic_10.mafs.gz"
+		->"THETAS/BKN_genic_10.thetas.gz"
+	-> Mon Jul 28 15:11:28 2014
 	-> Arguments and parameters for all analysis are located in .arg file
-	[ALL done] cpu-time used =  4950.39 sec
-	[ALL done] walltime used =  6027.00 sec
-fname1:/home/beissing/Dom_Bot_Git/TEMP/BKN_genic_10.saf nChr:46 startsfs:(null) nThreads:32 tole=0.000001 maxIter=100 nSites=4027328
-The choice of -nSites will require: 1444.000000 megabyte memory, that is approx: 0.28% of total memory
-dim(GL1)=4027328,47
-startlik=-27380097.987512
-[0] lik=-1402917.434062 diff=2.59772e+07
-[1] lik=-1400983.465122 diff=1933.97
-[2] lik=-1400970.476665 diff=12.9885
-[3] lik=-1400970.156785 diff=0.31988
-[4] lik=-1400970.102190 diff=0.0545947
-[5] lik=-1400970.082554 diff=0.0196364
-[6] lik=-1400970.074638 diff=0.00791624
-[7] lik=-1400970.071327 diff=0.00331062
-[8] lik=-1400970.069912 diff=0.00141474
-[9] lik=-1400970.069301 diff=0.000611561
-[10] lik=-1400970.069033 diff=0.000267683
-[11] lik=-1400970.068916 diff=0.00011748
-[12] lik=-1400970.068864 diff=5.21652e-05
-[13] lik=-1400970.068840 diff=2.35662e-05
-[14] lik=-1400970.068829 diff=1.05391e-05
-[15] lik=-1400970.068825 diff=4.65126e-06
-[16] lik=-1400970.068823 diff=2.14996e-06
-[17] lik=-1400970.068822 diff=9.47621e-07
-likelihood: -1400970.068822
+	[ALL done] cpu-time used =  3454.07 sec
+	[ALL done] walltime used =  5009.00 sec
+	Writing: chr:10 with nSites:4027328
+	Done writing: 10
+	Has dumped files:
+		'/home/beissing/Dom_Bot_Git/THETAS/BKN_genic_10.thetas.gz.bin'
+		'/home/beissing/Dom_Bot_Git/THETAS/BKN_genic_10.thetas.gz.idx'
+	Assuming binfile:/home/beissing/Dom_Bot_Git/THETAS/BKN_genic_10.thetas.gz.bin and indexfile:/home/beissing/Dom_Bot_Git/THETAS/BKN_genic_10.thetas.gz.idx
+		Information from index file:
+		0	10	4027328	0
+	 -r=(null) outnames=(null) step: 0 win: 0 nChr:46
+	Winsize equals zero or step size equals zero. Will use entire chromosome as window
+	pc.chr=10 pc.nSites=4027328 firstpos=300326 lastpos=149531492
+	Dumping file: "/home/beissing/Dom_Bot_Git/THETAS/BKN_genic_10.thetas.gz.pestPG"
