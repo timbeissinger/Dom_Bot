@@ -1,0 +1,218 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.2 loaded 
+Module angsd/570 loaded 
+	-> Reading fasta: DATA/TRIP/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 15 number of samples 
+	-> Printing at chr: 10 pos:41469 chunknumber 100
+	-> Printing at chr: 10 pos:51866 chunknumber 200
+	-> Printing at chr: 10 pos:70533 chunknumber 300
+	-> Printing at chr: 10 pos:146882 chunknumber 400
+	-> Printing at chr: 10 pos:264639 chunknumber 500
+	-> Printing at chr: 10 pos:307460 chunknumber 600
+	-> Printing at chr: 10 pos:407270 chunknumber 700
+	-> Printing at chr: 10 pos:480730 chunknumber 800
+	-> Printing at chr: 10 pos:545445 chunknumber 900
+	-> Printing at chr: 10 pos:576910 chunknumber 1000
+	-> Printing at chr: 10 pos:616801 chunknumber 1100
+	-> Printing at chr: 10 pos:639075 chunknumber 1200
+	-> Printing at chr: 10 pos:661115 chunknumber 1300
+	-> Printing at chr: 10 pos:690832 chunknumber 1400
+	-> Printing at chr: 10 pos:716775 chunknumber 1500
+	-> Printing at chr: 10 pos:758509 chunknumber 1600
+	-> Printing at chr: 10 pos:779895 chunknumber 1700
+	-> Printing at chr: 10 pos:806402 chunknumber 1800
+	-> Printing at chr: 10 pos:830542 chunknumber 1900
+	-> Printing at chr: 10 pos:870551 chunknumber 2000
+	-> Printing at chr: 10 pos:918130 chunknumber 2100
+	-> Printing at chr: 10 pos:957923 chunknumber 2200
+	-> Printing at chr: 10 pos:979245 chunknumber 2300
+	-> Printing at chr: 10 pos:1032432 chunknumber 2400
+	-> Printing at chr: 10 pos:1067640 chunknumber 2500
+	-> Printing at chr: 10 pos:1089210 chunknumber 2600
+	-> Printing at chr: 10 pos:1150374 chunknumber 2700
+	-> Printing at chr: 10 pos:1280816 chunknumber 2800
+	-> Printing at chr: 10 pos:1349778 chunknumber 2900
+	-> Printing at chr: 10 pos:1424212 chunknumber 3000
+	-> Printing at chr: 10 pos:1501198 chunknumber 3100
+	-> Printing at chr: 10 pos:1634202 chunknumber 3200
+	-> Printing at chr: 10 pos:1727437 chunknumber 3300
+	-> Printing at chr: 10 pos:1781251 chunknumber 3400
+	-> Printing at chr: 10 pos:1878678 chunknumber 3500
+	-> Printing at chr: 10 pos:1917799 chunknumber 3600
+	-> Printing at chr: 10 pos:1957368 chunknumber 3700
+	-> Printing at chr: 10 pos:2020609 chunknumber 3800
+	-> Printing at chr: 10 pos:2045608 chunknumber 3900
+	-> Printing at chr: 10 pos:2054859 chunknumber 4000
+	-> Printing at chr: 10 pos:2058444 chunknumber 4100
+	-> Printing at chr: 10 pos:2127277 chunknumber 4200
+	-> Printing at chr: 10 pos:2132850 chunknumber 4300
+	-> Printing at chr: 10 pos:2156928 chunknumber 4400
+	-> Printing at chr: 10 pos:2259131 chunknumber 4500
+	-> Printing at chr: 10 pos:2417429 chunknumber 4600
+	-> Printing at chr: 10 pos:2466076 chunknumber 4700
+	-> Printing at chr: 10 pos:2620985 chunknumber 4800
+	-> Printing at chr: 10 pos:2679514 chunknumber 4900
+	-> Printing at chr: 10 pos:2782084 chunknumber 5000
+	-> Printing at chr: 10 pos:2841142 chunknumber 5100
+	-> Printing at chr: 10 pos:2990990 chunknumber 5200
+	-> Printing at chr: 10 pos:3045629 chunknumber 5300
+	-> Printing at chr: 10 pos:3091191 chunknumber 5400
+	-> Printing at chr: 10 pos:3125839 chunknumber 5500
+	-> Printing at chr: 10 pos:3135698 chunknumber 5600
+	-> Printing at chr: 10 pos:3164301 chunknumber 5700
+	-> Printing at chr: 10 pos:3166125 chunknumber 5800
+	-> Printing at chr: 10 pos:3171695 chunknumber 5900
+	-> Printing at chr: 10 pos:3194853 chunknumber 6000
+	-> Printing at chr: 10 pos:3416463 chunknumber 6100
+	-> Printing at chr: 10 pos:3706882 chunknumber 6200
+	-> Printing at chr: 10 pos:3916325 chunknumber 6300
+	-> Printing at chr: 10 pos:3985968 chunknumber 6400
+	-> Printing at chr: 10 pos:4021635 chunknumber 6500
+	-> Printing at chr: 10 pos:4063594 chunknumber 6600
+	-> Printing at chr: 10 pos:4099498 chunknumber 6700
+	-> Printing at chr: 10 pos:4169534 chunknumber 6800
+	-> Printing at chr: 10 pos:4263608 chunknumber 6900
+	-> Printing at chr: 10 pos:4338394 chunknumber 7000
+	-> Printing at chr: 10 pos:4353543 chunknumber 7100
+	-> Printing at chr: 10 pos:4397821 chunknumber 7200
+	-> Printing at chr: 10 pos:4410609 chunknumber 7300
+	-> Printing at chr: 10 pos:4418212 chunknumber 7400
+	-> Printing at chr: 10 pos:4434889 chunknumber 7500
+	-> Printing at chr: 10 pos:4438171 chunknumber 7600
+	-> Printing at chr: 10 pos:4443327 chunknumber 7700
+	-> Printing at chr: 10 pos:4477450 chunknumber 7800
+	-> Printing at chr: 10 pos:4484876 chunknumber 7900
+	-> Printing at chr: 10 pos:4508098 chunknumber 8000
+	-> Printing at chr: 10 pos:4511702 chunknumber 8100
+	-> Printing at chr: 10 pos:4531231 chunknumber 8200
+	-> Printing at chr: 10 pos:4594472 chunknumber 8300
+	-> Printing at chr: 10 pos:4665723 chunknumber 8400
+	-> Printing at chr: 10 pos:4696433 chunknumber 8500
+	-> Printing at chr: 10 pos:4750058 chunknumber 8600
+	-> Printing at chr: 10 pos:4875887 chunknumber 8700
+	-> Printing at chr: 10 pos:4908986 chunknumber 8800
+	-> Printing at chr: 10 pos:4998008 chunknumber 8900
+	-> Printing at chr: 10 pos:5112918 chunknumber 9000
+	-> Printing at chr: 10 pos:5122689 chunknumber 9100
+	-> Printing at chr: 10 pos:5218342 chunknumber 9200
+	-> Printing at chr: 10 pos:5279527 chunknumber 9300
+	-> Printing at chr: 10 pos:5366889 chunknumber 9400
+	-> Printing at chr: 10 pos:5383270 chunknumber 9500
+	-> Printing at chr: 10 pos:5392246 chunknumber 9600
+	-> Printing at chr: 10 pos:5401094 chunknumber 9700
+	-> Printing at chr: 10 pos:5456158 chunknumber 9800
+	-> Printing at chr: 10 pos:5486902 chunknumber 9900
+	-> Printing at chr: 10 pos:5572114 chunknumber 10000
+	-> Printing at chr: 10 pos:5650776 chunknumber 10100
+	-> Printing at chr: 10 pos:5738869 chunknumber 10200
+	-> Printing at chr: 10 pos:5807716 chunknumber 10300
+	-> Printing at chr: 10 pos:5901106 chunknumber 10400
+	-> Printing at chr: 10 pos:5917244 chunknumber 10500
+	-> Printing at chr: 10 pos:6049440 chunknumber 10600
+	-> Printing at chr: 10 pos:6139677 chunknumber 10700
+	-> Printing at chr: 10 pos:6271099 chunknumber 10800
+	-> Printing at chr: 10 pos:6357530 chunknumber 10900
+	-> Printing at chr: 10 pos:6407430 chunknumber 11000
+	-> Printing at chr: 10 pos:6509669 chunknumber 11100
+	-> Printing at chr: 10 pos:6658160 chunknumber 11200
+	-> Printing at chr: 10 pos:6752001 chunknumber 11300
+	-> Printing at chr: 10 pos:6874645 chunknumber 11400
+	-> Printing at chr: 10 pos:6931743 chunknumber 11500
+	-> Printing at chr: 10 pos:6991151 chunknumber 11600
+	-> Printing at chr: 10 pos:7111084 chunknumber 11700
+	-> Printing at chr: 10 pos:7136735 chunknumber 11800
+	-> Printing at chr: 10 pos:7200214 chunknumber 11900
+	-> Printing at chr: 10 pos:7310901 chunknumber 12000
+	-> Printing at chr: 10 pos:7455383 chunknumber 12100
+	-> Printing at chr: 10 pos:7569879 chunknumber 12200
+	-> Printing at chr: 10 pos:7593366 chunknumber 12300
+	-> Printing at chr: 10 pos:7648082 chunknumber 12400
+	-> Printing at chr: 10 pos:7723107 chunknumber 12500
+	-> Printing at chr: 10 pos:7872680 chunknumber 12600
+	-> Printing at chr: 10 pos:7987577 chunknumber 12700
+	-> Printing at chr: 10 pos:8104447 chunknumber 12800
+	-> Printing at chr: 10 pos:8143775 chunknumber 12900
+	-> Printing at chr: 10 pos:8165119 chunknumber 13000
+	-> Printing at chr: 10 pos:8216049 chunknumber 13100
+	-> Printing at chr: 10 pos:8251927 chunknumber 13200
+	-> Printing at chr: 10 pos:8279094 chunknumber 13300
+	-> Printing at chr: 10 pos:8406815 chunknumber 13400
+	-> Printing at chr: 10 pos:8498846 chunknumber 13500
+	-> Printing at chr: 10 pos:8588141 chunknumber 13600
+	-> Printing at chr: 10 pos:8664094 chunknumber 13700
+	-> Printing at chr: 10 pos:8722197 chunknumber 13800
+	-> Printing at chr: 10 pos:8804840 chunknumber 13900
+	-> Printing at chr: 10 pos:8823334 chunknumber 14000
+	-> Printing at chr: 10 pos:8844809 chunknumber 14100
+	-> Printing at chr: 10 pos:8924957 chunknumber 14200
+	-> Printing at chr: 10 pos:9106970 chunknumber 14300
+	-> Printing at chr: 10 pos:9241843 chunknumber 14400
+	-> Printing at chr: 10 pos:9352266 chunknumber 14500
+	-> Printing at chr: 10 pos:9404693 chunknumber 14600
+	-> Printing at chr: 10 pos:9471663 chunknumber 14700
+	-> Printing at chr: 10 pos:9528945 chunknumber 14800
+	-> Printing at chr: 10 pos:9591256 chunknumber 14900
+	-> Printing at chr: 10 pos:9650883 chunknumber 15000
+	-> Printing at chr: 10 pos:9847778 chunknumber 15100
+	-> Printing at chr: 10 pos:9882758 chunknumber 15200
+	-> Printing at chr: 10 pos:9921430 chunknumber 15300
+	-> Printing at chr: 10 pos:9974213 chunknumber 15400
+	-> Printing at chr: 10 pos:9992144 chunknumber 15500
+
+	-> Done reading data waiting for calculations to finish
+	-> Calling destroy
+	-> Done waiting for threads
+	-> Output filenames:
+		->"TEMP/TIL_begin_10.arg"
+		->"TEMP/TIL_begin_10.mafs.gz"
+		->"TEMP/TIL_begin_10.geno.gz"
+		->"TEMP/TIL_begin_10.saf"
+		->"TEMP/TIL_begin_10.saf.pos.gz"
+	-> Fri Jul 25 11:22:56 2014
+	-> Arguments and parameters for all analysis are located in .arg file
+	[ALL done] cpu-time used =  1750.01 sec
+	[ALL done] walltime used =  1542.00 sec
+fname1:TEMP/TIL_begin_10.saf nChr:30 startsfs:(null) nThreads:32 tole=0.000001 maxIter=100 nSites=616833
+The choice of -nSites will require: 145.000000 megabyte memory, that is approx: 0.03% of total memory
+dim(GL1)=616833,31
+startlik=-3671465.032105
+[0] lik=-273310.573285 diff=3.39815e+06
+[1] lik=-272802.980030 diff=507.593
+[2] lik=-272799.634956 diff=3.34507
+[3] lik=-272799.429518 diff=0.205438
+[4] lik=-272799.340688 diff=0.0888299
+[5] lik=-272799.285764 diff=0.0549246
+[6] lik=-272799.249423 diff=0.0363404
+[7] lik=-272799.224800 diff=0.0246229
+[8] lik=-272799.207916 diff=0.0168847
+[9] lik=-272799.196253 diff=0.0116628
+[10] lik=-272799.188158 diff=0.00809488
+[11] lik=-272799.182521 diff=0.00563674
+[12] lik=-272799.178587 diff=0.00393426
+[13] lik=-272799.175837 diff=0.00275043
+[14] lik=-272799.173912 diff=0.00192497
+[15] lik=-272799.172563 diff=0.00134861
+[16] lik=-272799.171618 diff=0.00094519
+[17] lik=-272799.170955 diff=0.000663021
+[18] lik=-272799.170490 diff=0.000465216
+[19] lik=-272799.170163 diff=0.000326431
+[20] lik=-272799.169934 diff=0.000229174
+[21] lik=-272799.169773 diff=0.0001607
+[22] lik=-272799.169660 diff=0.000112985
+[23] lik=-272799.169581 diff=7.92925e-05
+[24] lik=-272799.169525 diff=5.57316e-05
+[25] lik=-272799.169486 diff=3.91417e-05
+[26] lik=-272799.169459 diff=2.75093e-05
+[27] lik=-272799.169439 diff=1.93164e-05
+[28] lik=-272799.169426 diff=1.35744e-05
+[29] lik=-272799.169416 diff=9.47295e-06
+[30] lik=-272799.169410 diff=6.70517e-06
+[31] lik=-272799.169405 diff=4.71337e-06
+[32] lik=-272799.169402 diff=3.31114e-06
+[33] lik=-272799.169399 diff=2.33104e-06
+[34] lik=-272799.169398 diff=1.6361e-06
+[35] lik=-272799.169396 diff=1.15467e-06
+[36] lik=-272799.169396 diff=8.06525e-07
+likelihood: -272799.169396

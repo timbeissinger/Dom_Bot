@@ -1,0 +1,15 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.2 loaded 
+Module angsd/570 loaded 
+	-> Reading fasta: DATA/TRIP/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 23 number of samples 
+	-> Printing at chr: 10 pos:1349782 chunknumber 100
+	-> Printing at chr: 10 pos:1948805 chunknumber 200
+	-> Printing at chr: 10 pos:2256162 chunknumber 300
+	-> Printing at chr: 10 pos:2797529 chunknumber 400
+	-> Printing at chr: 10 pos:3397393 chunknumber 500
+	-> Printing at chr: 10 pos:4071612 chunknumber 600
+	-> Printing at chr: 10 pos:4614584 chunknumber 700
+	-> Printing at chr: 10 pos:4914641 chunknumber 800

@@ -1,0 +1,2 @@
+-bam DATA/LISTS/BKN_list.txt -out TEMP/BKN_begin_10 -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/BKN.indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ 30 -minQ 20 -nInd 23 -minInd 18 -baq 1 -ref /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa -GL 1 -P 32 -r 10:1-10000000 -doGeno 32 -doPost 1
+TEMP/BKN_begin_10.saf 46 -P 32
