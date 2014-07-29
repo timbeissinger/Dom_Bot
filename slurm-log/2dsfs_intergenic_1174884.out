@@ -1,0 +1,11 @@
+BKN
+TIL
+
+cat /home/beissing/Dom_Bot_Git/TEMP/BKN_intergenic_10.saf.pos /home/beissing/Dom_Bot_Git/TEMP/TIL_intergenic_10.saf.pos|sort|uniq -d >/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL.intergenic_10.txt
+
+/home/beissing/bin/angsd0.609/angsd -bam DATA/LISTS/BKN_list.txt -out /home/beissing/Dom_Bot_Git/TEMP/BKN_intergenic_10_conditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/BKN.indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ 30 -minQ 20 -nInd 23 -minInd 18 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL 1 -P 32 -rf /home/beissing/Dom_Bot_Git/intergenic/intergenicRegionFile_chr10.txt -sites /home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_intergenic_10.txt
+
+/home/beissing/bin/angsd0.609/angsd -bam DATA/LISTS/TIL_list.txt -out /home/beissing/Dom_Bot_Git/TEMP/TIL_intergenic_10_conditioned -doMajorMinor 1 -doMaf 1 -indF DATA/INBREEDING/TIL.indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ 30 -minQ 20 -nInd 15 -minInd 12 -baq 1 -ref /home/beissing/GENOMES/Zea_mays.AGPv3.22.dna.genome.fa -GL 1 -P 32 -rf /home/beissing/Dom_Bot_Git/intergenic/intergenicRegionFile_chr10.txt -sites /home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_intergenic_10.txt
+
+/home/beissing/bin/angsd0.609/misc/realSFS 2dsfs /home/beissing/Dom_Bot_Git/TEMP/BKN_intergenic_10_conditioned.saf /home/beissing/Dom_Bot_Git/TEMP/TIL_intergenic_10_conditioned.saf 46 30 -P 32  > SFS/2dsfs_intergenic.BKN.TIL.sfs
+

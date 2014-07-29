@@ -1,0 +1,31 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.2 loaded 
+	-> [abcFilter.cpp] Reading binary representation:/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_intergenic_10.txt
+	-> Potential problem: File: '/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_intergenic_10.txt' looks newer than files: '/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_intergenic_10.txt.bin','/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_intergenic_10.txt.idx'
+	-> Please delete /home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_intergenic_10.txt.bin//home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_intergenic_10.txt.idx files and rerun.
+	-> [abcFilter.cpp] Reading binary representation:/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_intergenic_10.txt
+	-> Potential problem: File: '/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_intergenic_10.txt' looks newer than files: '/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_intergenic_10.txt.bin','/home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_intergenic_10.txt.idx'
+	-> Please delete /home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_intergenic_10.txt.bin//home/beissing/Dom_Bot_Git/TEMP/intersect.BKN.TIL_intergenic_10.txt.idx files and rerun.
+fname1:/home/beissing/Dom_Bot_Git/TEMP/BKN_intergenic_10_conditioned.saffname2:/home/beissing/Dom_Bot_Git/TEMP/TIL_intergenic_10_conditioned.saf chr1:46 chr2:30 startsfs:(null) nThreads=32 tole=0.000001 maxIter=100 nSites:-1
+startlik=-35552398.320596
+[0] lik=-1937908.174412 diff=3.36145e+07
+[1] lik=-1930939.724002 diff=6968.45
+[2] lik=-1930849.830968 diff=89.893
+[3] lik=-1930830.864806 diff=18.9662
+[4] lik=-1930820.642738 diff=10.2221
+[5] lik=-1930814.338476 diff=6.30426
+[6] lik=-1930810.197281 diff=4.14119
+[7] lik=-1930807.347638 diff=2.84964
+[8] lik=-1930805.312623 diff=2.03502
+[9] lik=-1930803.814712 diff=1.49791
+[10] lik=-1930802.684369 diff=1.13034
+[11] lik=-1930801.813674 diff=0.870695
+[12] lik=-1930801.131427 diff=0.682246
+[13] lik=-1930800.589126 diff=0.542301
+[14] lik=-1930800.152836 diff=0.436291
+[15] lik=-1930799.798197 diff=0.354639
+[16] lik=-1930799.507365 diff=0.290832
+[17] lik=-1930799.267020 diff=0.240346
+[18] lik=-1930799.067053 diff=0.199966
+[19] lik=-1930798.899689 diff=0.167364
+[20] lik=-1930798.758869 diff=0.140821
