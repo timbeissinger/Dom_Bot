@@ -1,3 +1,0 @@
-## thetaStat VERSION: 0.01 build:(Jul  2 2014,11:07:08)
-#(indexStart,indexStop)(firstPos_withData,lastPos_withData)(WinStart,WinStop)	Chr	WinCenter	tW	tP	tF	tH	tL	Tajima	fuf	fud	fayh	zeng	nSites
-(0,4059656)(300326,149531492)(0,149531492)	10	74765746	31024.471555	30716.510157	0.000000	32517.358179	31616.934246	-0.038922	1.839985	2.450762	-0.050609	0.017449	4059656
