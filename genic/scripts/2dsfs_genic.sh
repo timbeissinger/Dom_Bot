@@ -45,14 +45,14 @@ regionfile="/home/beissing/Dom_Bot_Git/genic/genicRegionFile_chr10.txt"
 
 # Next, extract the compressed files
 
-command1=""$outputdir"/"$pop1"_genic_10.saf.pos.gz "
-command2=""$outputdir"/"$pop2"_genic_10.saf.pos.gz "
-echo gunzip $command1
-echo
-echo gunzip $command2
-echo
-gunzip $command1
-gunzip $command2
+# command1=""$outputdir"/"$pop1"_genic_10.saf.pos.gz "
+# command2=""$outputdir"/"$pop2"_genic_10.saf.pos.gz "
+# echo gunzip $command1
+# echo
+# echo gunzip $command2
+# echo
+# gunzip $command1
+# gunzip $command2
 
 # Now we find the positions that occur in both populations using the
 # uniq POSIX program
