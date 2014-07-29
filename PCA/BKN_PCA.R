@@ -64,7 +64,7 @@ bknPCA <- dudi.pca(bknMat,cent=F,scale=F,scannf=F,nf=34)
 ### Plot PCA PCA
 pdf("bknPCA.pdf",height=8,width=12)
 par(mfrow=c(1,2))
-barplot(bknPCA$eig[1:34],main="BKN PCA eigenvalues",col=heat.colors(34))
+barplot(bknPCA$eig[1:34]/sum(bknPCA$eig),main="BKN PCA eigenvalues",col=heat.colors(34))
 plot(bknPCA$li[,1],bknPCA$li[,2],pch=16,cex=0.5,main="BKN PC1 vs PC2",xlab="PC 1",ylab="PC 2")
 text(labels=substr(rownames(tbkn),1,6),bknPCA$li[,1],bknPCA$li[,2],cex=0.5,pos=1)
 dev.off()
