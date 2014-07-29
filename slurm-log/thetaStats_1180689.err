@@ -1,0 +1,53 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.2 loaded 
+	-> Reading fasta: DATA/TRIP/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 23 number of samples 
+	-> Printing at chr: 10 pos:179900 chunknumber 100
+	-> Printing at chr: 10 pos:468184 chunknumber 200
+	-> Printing at chr: 10 pos:960442 chunknumber 300
+	-> Printing at chr: 10 pos:1391194 chunknumber 400
+	-> Printing at chr: 10 pos:1780340 chunknumber 500
+	-> Printing at chr: 10 pos:2491005 chunknumber 600
+	-> Printing at chr: 10 pos:3131993 chunknumber 700
+	-> Printing at chr: 10 pos:3842727 chunknumber 800
+	-> Printing at chr: 10 pos:4416276 chunknumber 900
+	-> Printing at chr: 10 pos:4982367 chunknumber 1000
+	-> Printing at chr: 10 pos:5420373 chunknumber 1100
+	-> Printing at chr: 10 pos:6064095 chunknumber 1200
+	-> Printing at chr: 10 pos:6466196 chunknumber 1300
+	-> Printing at chr: 10 pos:6935296 chunknumber 1400
+	-> Printing at chr: 10 pos:7208110 chunknumber 1500
+	-> Printing at chr: 10 pos:7741497 chunknumber 1600
+	-> Printing at chr: 10 pos:8110003 chunknumber 1700
+	-> Printing at chr: 10 pos:8273086 chunknumber 1800
+	-> Printing at chr: 10 pos:9060488 chunknumber 1900
+	-> Printing at chr: 10 pos:9471258 chunknumber 2000
+	-> Printing at chr: 10 pos:10094849 chunknumber 2100
+	-> Printing at chr: 10 pos:10540347 chunknumber 2200
+	-> Printing at chr: 10 pos:10917483 chunknumber 2300
+	-> Printing at chr: 10 pos:11035102 chunknumber 2400
+	-> Printing at chr: 10 pos:11269045 chunknumber 2500
+	-> Printing at chr: 10 pos:11716017 chunknumber 2600
+	-> Printing at chr: 10 pos:12337603 chunknumber 2700
+	-> Printing at chr: 10 pos:12731801 chunknumber 2800
+	-> Printing at chr: 10 pos:13058807 chunknumber 2900
+	-> Printing at chr: 10 pos:13329865 chunknumber 3000
+	-> Printing at chr: 10 pos:13781000 chunknumber 3100
+	-> Printing at chr: 10 pos:13930448 chunknumber 3200
+	-> Printing at chr: 10 pos:14642712 chunknumber 3300
+	-> Printing at chr: 10 pos:14903208 chunknumber 3400
+	-> Printing at chr: 10 pos:15341300 chunknumber 3500
+	-> Printing at chr: 10 pos:15698964 chunknumber 3600
+	-> Printing at chr: 10 pos:16264260 chunknumber 3700
+	-> Printing at chr: 10 pos:16425007 chunknumber 3800
+	-> Printing at chr: 10 pos:16652717 chunknumber 3900
+	-> Printing at chr: 10 pos:16778196 chunknumber 4000
+	-> Printing at chr: 10 pos:16989629 chunknumber 4100
+	-> Printing at chr: 10 pos:17202239 chunknumber 4200
+	-> Printing at chr: 10 pos:17344096 chunknumber 4300
+	-> Printing at chr: 10 pos:17516878 chunknumber 4400
+	-> Printing at chr: 10 pos:17911481 chunknumber 4500
+	-> Printing at chr: 10 pos:18104983 chunknumber 4600
+	-> Printing at chr: 10 pos:18279112 chunknumber 4700
