@@ -45,7 +45,7 @@ regionfile="/home/beissing/Dom_Bot_Git/intergenic/intergenicRegionFile_chr10.txt
 
 # Next, extract the compressed files
 
-command1=""$outputdir"/"$pop1"_intergenic_10.saf.pos.gz "
+#command1=""$outputdir"/"$pop1"_intergenic_10.saf.pos.gz "
 #command2=""$outputdir"/"$pop2"_intergenic_10.saf.pos.gz "
 #echo gunzip $command1
 #echo

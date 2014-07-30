@@ -1,1 +1,3 @@
 -bam DATA/LISTS/TIL_list.txt -out THETAS/TIL_intergenic_10_windows -pest SFS/TIL_intergenic_10.sfs -indF DATA/INBREEDING/TIL.indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ 30 -minQ 20 -nInd 15 -minInd 12 -baq 1 -ref /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa -GL 1 -P 32 -rf /home/beissing/Dom_Bot_Git/intergenic/intergenicRegionFile_chr10.txt -doThetas 1 -doMajorMinor 1 -doMaf 1
+make_bed /home/beissing/Dom_Bot_Git/THETAS/TIL_intergenic_10_windows.thetas.gz
+do_stat /home/beissing/Dom_Bot_Git/THETAS/TIL_intergenic_10_windows.thetas.gz -nChr 30 -win 1000 -step 500
