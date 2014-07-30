@@ -14,9 +14,9 @@ setwd("~/Documents/DomesticationBottleneck/Dom_Bot/SFS/")
 library(gplots)
 
 ### Read in the spectra
-sfsBKN <- exp(scan("BKN.sfs"))
-sfsTIL <- exp(scan("TIL.sfs"))
-sfs2d <- exp(read.table( "2dsfs.TIL.BKN.sfs",header=F,stringsAsFactors=F))
+#sfsBKN <- exp(scan("BKN.sfs"))
+#sfsTIL <- exp(scan("TIL.sfs"))
+#sfs2d <- exp(read.table( "2dsfs.TIL.BKN.sfs",header=F,stringsAsFactors=F))
 
 sfsBKN_intergenic<- exp(scan("BKN_intergenic_10.sfs"))
 sfsTIL_intergenic<- exp(scan("TIL_intergenic_10.sfs"))
@@ -45,10 +45,10 @@ dev.off()
 ### Barplots comparing genic 10 and intergenic 10
 sfsBKN_comp_10 <- rbind(sfsBKN_genic,sfsBKN_intergenic)[,seq(1,47,2)]
 colnames(sfsBKN_comp_10) <- 0:23
-sfsTIL_comp_10 <- rbind(sfsTIL_genic,sfsTIL_intergenic)[,seq(1,31,2)]
-colnames(sfsTIL_comp_10) <- 0:15
+sfsTIL_comp_10 <- rbind(sfsTIL_genic,sfsTIL_intergenic)[,seq(1,27,2)]
+colnames(sfsTIL_comp_10) <- 0:13
 
-pdf("SFS_compare_10.pdf")
+pdf("SFS_compare_10.pdf",width=10)
 barplot(sfsBKN_comp_10[,2:{ncol(sfsBKN_comp_10)-1}],beside=T,col=c("red","blue"),
         main="Landrace chromosome 10 sfs",
         xlab="No. of Haplotypes containing derived allele", ylab="Proportion")
