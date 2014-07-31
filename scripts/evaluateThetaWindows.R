@@ -16,7 +16,7 @@ TILintergenic <- read.table("../THETAS/TIL_intergenic_10_windows.thetas.gz.pestP
 BKNgenicCovered <- BKNgenic[which(BKNgenic$nSites>100),]
 BKNintergenicCovered <- BKNintergenic[which(BKNintergenic$nSites>100),]
 TILgenicCovered <- TILgenic[which(TILgenic$nSites>100),]
-TILintergenicCovered <- TILgenic[which(TILintergenic$nSites>100),]
+TILintergenicCovered <- TILintergenic[which(TILintergenic$nSites>100),]
 
 ### Simple plot
 par(mfrow=c(2,2))
@@ -32,8 +32,26 @@ mean(TILgenicCovered$Tajima)
 mean(TILintergenicCovered$Tajima,na.rm=T)
 
 ### Hist
-hist(BKNintergenicCovered$Tajima)
-hist(BKNgenicCovered$Tajima)
-hist(TILgenicCovered$Tajima)
-hist(TILintergenicCovered$Tajima)
+hist(BKNintergenicCovered$Tajima,breaks=breaks)
+hist(BKNgenicCovered$Tajima,breaks=breaks)
+hist(TILgenicCovered$Tajima,breaks=breaks)
+hist(TILintergenicCovered$Tajima,breaks=breaks)
 
+### Overlapping hists
+
+pdf("../THETAS/TajimaHists.pdf")
+breaks=seq(-2.5,4.5,0.2)
+### BKN
+hist(BKNgenicCovered$Tajima,breaks=breaks,freq=F,col=rgb(1,0,1,0.5),ylim=c(0,0.7),main="Maize: Tajima's D on Chromosome 10",xlab="Tajima's D",ylab="Density")
+par(new=T)
+hist(BKNintergenicCovered$Tajima,breaks=breaks,freq=F,col=rgb(1,0.5,0,0.5),ylim=c(0,0.7),ylab="",xlab="",main="")
+legend("topright","(x,y)",pch=15,col=c(rgb(1,0,1,0.5),rgb(1,0.5,0,0.5)),c(paste("Genic (mean = ", signif(mean(BKNgenicCovered$Tajima),2),")",sep=""),paste("Non-genic (mean = ", signif(mean(BKNintergenicCovered$Tajima),2),")",sep="")))
+
+
+
+hist(TILgenicCovered$Tajima,breaks=breaks,freq=F,col=rgb(1,0,1,0.5),ylim=c(0,0.7),main="TIL: Tajima's D on Chromosome 10",xlab="Tajima's D",ylab="Density")
+par(new=T)
+hist(TILintergenicCovered$Tajima,breaks=breaks,freq=F,col=rgb(1,0.5,0,0.5),ylim=c(0,0.7),ylab="",xlab="",main="")
+legend("topright","(x,y)",pch=15,col=c(rgb(1,0,1,0.5),rgb(1,0.5,0,0.5)),c(paste("Genic (mean = ", signif(mean(TILgenicCovered$Tajima),2),")",sep=""),paste("Non-genic (mean = ", signif(mean(TILintergenicCovered$Tajima),2),")",sep="")))
+
+dev.off()

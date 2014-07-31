@@ -28,7 +28,7 @@
 
 
 ### Convert BKN_genic10.sfs
-sfsBKNgenic <- exp(scan("../SFS/BKN_genic_10.sfs"))
+sfsBKNgenic <- exp(scan("../SFS/BKN_genic_10.sfs"))*4027328 #4,027,328 bp included
 sfsBKNgenic <- sfsBKNgenic[seq(1,length(sfsBKNgenic),2)] # treat as sample from haploid
 sfsBKNgenicDadi <- matrix(nrow=2,ncol=1)
 sfsBKNgenicDadi[1,1] <- paste(length(sfsBKNgenic), "unfolded",sep=" ")
@@ -36,7 +36,7 @@ sfsBKNgenicDadi[2,1] <- paste(sfsBKNgenic,collapse=" ")
 write.table(sfsBKNgenicDadi,file="../SFS/sfsBKN_genic_10.dadi",quote=F,row.names=F,col.names=F)
 
 ### Convert BKN_intergenic10.sfs
-sfsBKNintergenic <- exp(scan("../SFS/BKN_intergenic_10.sfs"))
+sfsBKNintergenic <- exp(scan("../SFS/BKN_intergenic_10.sfs"))*3993904 #3,993,904 bp included
 sfsBKNintergenic <- sfsBKNintergenic[seq(1,length(sfsBKNintergenic),2)] # treat as sample from haploid
 sfsBKNintergenicDadi <- matrix(nrow=2,ncol=1)
 sfsBKNintergenicDadi[1,1] <- paste(length(sfsBKNintergenic), "unfolded",sep=" ")
@@ -46,7 +46,7 @@ write.table(sfsBKNintergenicDadi,file="../SFS/sfsBKN_intergenic_10.dadi",quote=F
 
 
 ### Convert TIL_genic10.sfs
-sfsTILgenic <- exp(scan("../SFS/TIL_genic_10.sfs"))
+sfsTILgenic <- exp(scan("../SFS/TIL_genic_10.sfs"))*4107050 #4,107,050 bp included
 sfsTILgenic <- sfsTILgenic[seq(1,length(sfsTILgenic),2)] # treat as sample from haploid
 sfsTILgenicDadi <- matrix(nrow=2,ncol=1)
 sfsTILgenicDadi[1,1] <- paste(length(sfsTILgenic), "unfolded",sep=" ")
@@ -54,7 +54,7 @@ sfsTILgenicDadi[2,1] <- paste(sfsTILgenic,collapse=" ")
 write.table(sfsTILgenicDadi,file="../SFS/sfsTIL_genic_10.dadi",quote=F,row.names=F,col.names=F)
 
 ### Convert TIL_intergenic10.sfs
-sfsTILintergenic <- exp(scan("../SFS/TIL_intergenic_10.sfs"))
+sfsTILintergenic <- exp(scan("../SFS/TIL_intergenic_10.sfs"))*3208736 #3,208,736
 sfsTILintergenic <- sfsTILintergenic[seq(1,length(sfsTILintergenic),2)] # treat as sample from haploid
 sfsTILintergenicDadi <- matrix(nrow=2,ncol=1)
 sfsTILintergenicDadi[1,1] <- paste(length(sfsTILintergenic), "unfolded",sep=" ")
@@ -66,7 +66,7 @@ write.table(sfsTILintergenicDadi,file="../SFS/sfsTIL_intergenic_10.dadi",quote=F
 
 ############################ Genic first ############################
 # Read in 2D sfs genic
-sfsgenic <- exp(read.table("../SFS/2dsfs_genic.TIL.BKN.sfs"))
+sfsgenic <- exp(read.table("../SFS/2dsfs_genic.TIL.BKN.sfs"))*3830849 #3,830,849 bp included
 sfsgenic <- sfsgenic[seq(1,nrow(sfsgenic),2),seq(1,ncol(sfsgenic),2)]
 
 # Get sample sizes and make header
@@ -90,7 +90,7 @@ write.table(paste(dadi,collapse=' '),file="../SFS/2d_genic_TIL_BKN.dadi",col.nam
 
 ############################ Intergenic next ############################
 # Read in 2D sfs genic
-sfsintergenic <- exp(read.table("../SFS/2dsfs_intergenic.TIL.BKN.sfs"))
+sfsintergenic <- exp(read.table("../SFS/2dsfs_intergenic.TIL.BKN.sfs"))*2837037 #2,837,037 bp included
 sfsintergenic <- sfsintergenic[seq(1,nrow(sfsintergenic),2),seq(1,ncol(sfsintergenic),2)]
 
 # Get sample sizes and make header
