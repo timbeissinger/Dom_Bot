@@ -4,16 +4,16 @@ Realistic bottleneck model, no migration.
 
 """
 In words:
-At time TF + TB in the past, an equilibrium teosinte population will split into
-a maize population and a teosinte population. The maize population will go
+At time TF in the past, an equilibrium teosinte population will split into
+a maize population and a teosinte population. The maize population will immediately go
 through a bottleneck of size nuMB. Then, it will grow exponentially  at
-time TF. The Teosinte population will not go through a bottleneck. It will end
-at size nuTF.
+time TF. The Teosinte population will not go through a bottleneck. It will remain at a
+fixed size.
 """
 import numpy
 import dadi
 
-def maizeBottleneck ((nuMB , nuMF, TB , TF ), ns, pts):
+def maizeBottleneck ((nuMB , nuMF, nuTeoF , TF ), ns, pts):
     # define the grid
     xx = dadi.Numerics.default_grid(pts)
 
@@ -24,13 +24,16 @@ def maizeBottleneck ((nuMB , nuMF, TB , TF ), ns, pts):
     phi = dadi.PhiManip.phi_1D_to_2D(xx, phi)
 
     # Send maize population through a bottleneck
-    phi = dadi.Integration.two_pops(phi, xx,T = TB, nu1 = 1, nu2 = nuMB)
+    phi = dadi.Integration.two_pops(phi, xx, nu1 = 1, nu2 = nuMB)
 
-    # define the exponential growth function
-    nu_func = lambda t: nuMB*(nuMF/nuMB) ** (t/TF)
+    # define the maize exponential growth function
+    nu_funcM = lambda t: nuMB*(nuMF/nuMB) ** (t/TF)
+    
+    # define the teosinte linear growth function
+    nu_funcTeo = lambda t: (nuTeoF-1) * (t/TF) + 1
 
     # Recover maize population exponentially
-    phi = dadi.Integration.two_pops(phi, xx, T = TF, nu1 = 1, nu2 = nu_func)
+    phi = dadi.Integration.two_pops(phi, xx, T = TF, nu1 = nu_funcTeo, nu2 = nu_funcM)
 
 
     fs = dadi.Spectrum.from_phi(phi, ns, (xx,xx))

@@ -16,6 +16,11 @@ import dadi
 fsBKNintergenic = dadi.Spectrum.from_file("/Users/beissinger/Documents/DomesticationBottleneck/Dom_Bot/SFS/sfsBKN_intergenic_10.dadi" )
 fsTILintergenic = dadi.Spectrum.from_file("/Users/beissinger/Documents/DomesticationBottleneck/Dom_Bot/SFS/sfsTIL_intergenic_10.dadi" )
 
+### Plotting a single-population spectra
+import pylab
+dadi.Plotting.plot_1d_fs(fsBKNintergenic)
+dadi.Plotting.plot_1d_fs(fsTILintergenic)
+
 ### Load a 2d fs (BKN and TIL)
 fs2dIntergenic = dadi.Spectrum.from_file("/Users/beissinger/Documents/DomesticationBottleneck/Dom_Bot/SFS/2d_intergenic_TIL_BKN.dadi" )
 
@@ -40,16 +45,22 @@ ns = fs2dIntergenic.sample_sizes
 
 
 # set grid sizes
-pts_l = [80,90,100]
+pts_l = [40,50,60]
 
 # Let's work with the "custom" model in the bottleneck.py file
 #func = realisticBottleneck.maizeBottleneck
-func = realisticBottleneck.maizeBottleneck
-# ll for this model:
-#params = array([1,1,1,1,1 ]) # junk values for testing
-params = array([.01, 3, 1, 0.6 ]) # junk values for testing
-upper_bound = [100, 100, 100, 100] # junk values for testing
-lower_bound = [ 0.00000001, 0.0000001, 0.0000001, 0.0000001]
+
+#func = realisticBottleneck.maizeBottleneck
+func = realisticBottleneck.maizeBottleneck_teoFixed
+
+#params = array([.01, 3, 1, 0.6 ]) # junk values for testing
+params = array([.01, 3, 0.6 ]) # junk values for testing
+
+#upper_bound = [100, 100, 100, 100] # junk values for testing
+upper_bound = [100, 100, 100] # junk values for testing
+
+#lower_bound = [ 0.0001, 0.0001, 0.0001, 0.0000001]
+lower_bound = [ 0.0001, 0.0001, 0.0000001]
 
 # Make the extrapolating version of the demographic model function
 func_ex = dadi.Numerics.make_extrap_log_func(func)

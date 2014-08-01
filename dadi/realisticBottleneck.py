@@ -24,7 +24,7 @@ def maizeBottleneck ((nuMB , nuMF, nuTeoF , TF ), ns, pts):
     phi = dadi.PhiManip.phi_1D_to_2D(xx, phi)
 
     # Send maize population through a bottleneck
-    phi = dadi.Integration.two_pops(phi, xx,T = 0, nu1 = 1, nu2 = nuMB)
+    phi = dadi.Integration.two_pops(phi, xx, nu1 = 1, nu2 = nuMB)
 
     # define the maize exponential growth function
     nu_funcM = lambda t: nuMB*(nuMF/nuMB) ** (t/TF)
@@ -35,6 +35,32 @@ def maizeBottleneck ((nuMB , nuMF, nuTeoF , TF ), ns, pts):
     # Recover maize population exponentially
     phi = dadi.Integration.two_pops(phi, xx, T = TF, nu1 = nu_funcTeo, nu2 = nu_funcM)
 
+
+    fs = dadi.Spectrum.from_phi(phi, ns, (xx,xx))
+    return fs
+
+
+
+
+
+def maizeBottleneck_teoFixed ((nuMB , nuMF, TF ), ns, pts):
+    # define the grid
+    xx = dadi.Numerics.default_grid(pts)
+
+    # phi for the equilibrium ancestral population
+    phi = dadi.PhiManip.phi_1D(xx)
+
+    # now do the population split
+    phi = dadi.PhiManip.phi_1D_to_2D(xx, phi)
+
+    # Send maize population through a bottleneck
+    phi = dadi.Integration.two_pops(phi, xx, T = 0, nu1 = 1, nu2 = nuMB)
+
+    # define the maize exponential growth function
+    nu_funcM = lambda t: nuMB*(nuMF/nuMB) ** (t/TF)
+    
+    # Recover maize population exponentially
+    phi = dadi.Integration.two_pops(phi, xx, T = TF, nu1 = 1, nu2 = nu_funcM)
 
     fs = dadi.Spectrum.from_phi(phi, ns, (xx,xx))
     return fs
