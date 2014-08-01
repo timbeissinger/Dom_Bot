@@ -1,0 +1,50 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.2 loaded 
+fname1:/home/beissing/Dom_Bot_Git/TEMP/BKN_genic_10_conditioned.saf nChr:46 startsfs:(null) nThreads:32 tole=0.000001 maxIter=100 nSites=3830849
+The choice of -nSites will require: 1373.000000 megabyte memory, that is approx: 0.28% of total memory
+dim(GL1)=3830849,47
+startlik=-26051017.364122
+[0] lik=-1327757.597527 diff=2.47233e+07
+[1] lik=-1326036.929335 diff=1720.67
+[2] lik=-1326025.913200 diff=11.0161
+[3] lik=-1326025.649691 diff=0.263509
+[4] lik=-1326025.606211 diff=0.0434795
+[5] lik=-1326025.591505 diff=0.0147063
+[6] lik=-1326025.585950 diff=0.00555493
+[7] lik=-1326025.583771 diff=0.00217879
+[8] lik=-1326025.582896 diff=0.000875048
+[9] lik=-1326025.582539 diff=0.000356872
+[10] lik=-1326025.582389 diff=0.000150691
+[11] lik=-1326025.582328 diff=6.01476e-05
+[12] lik=-1326025.582303 diff=2.56968e-05
+[13] lik=-1326025.582291 diff=1.21556e-05
+[14] lik=-1326025.582286 diff=4.51482e-06
+[15] lik=-1326025.582284 diff=1.99326e-06
+[16] lik=-1326025.582283 diff=8.49366e-07
+likelihood: -1326025.582283
+	-> [abcFilter.cpp] Reading binary representation:/home/beissing/Dom_Bot_Git/TEMP/intersect.TIL.BKN_genic_10.txt
+	-> [abcFilter.cpp] nChr: 1 loaded from binary filter file
+	-> [abcFilter.cpp] -sites is still beta, use at own risk...
+	-> Reading fasta: DATA/TRIP/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 23 number of samples 
+	-> Printing at chr: 10 pos:1349782 chunknumber 100
+	-> Printing at chr: 10 pos:1948805 chunknumber 200
+	-> Printing at chr: 10 pos:2256162 chunknumber 300
+	-> Printing at chr: 10 pos:2797529 chunknumber 400
+	-> Printing at chr: 10 pos:3397393 chunknumber 500
+	-> Printing at chr: 10 pos:4071612 chunknumber 600
+	-> Printing at chr: 10 pos:4614584 chunknumber 700
+	-> Printing at chr: 10 pos:4914641 chunknumber 800
+	-> Printing at chr: 10 pos:5594910 chunknumber 900
+	-> Printing at chr: 10 pos:6401895 chunknumber 1000
+	-> Printing at chr: 10 pos:7406374 chunknumber 1100
+	-> Printing at chr: 10 pos:8456529 chunknumber 1200
+	-> Printing at chr: 10 pos:9404043 chunknumber 1300
+	-> Printing at chr: 10 pos:10296477 chunknumber 1400
+	-> Printing at chr: 10 pos:10888883 chunknumber 1500
+	-> Printing at chr: 10 pos:12649155 chunknumber 1600
+	-> Printing at chr: 10 pos:13503364 chunknumber 1700
+	-> Printing at chr: 10 pos:14525649 chunknumber 1800
+	-> Printing at chr: 10 pos:15720374 chunknumber 1900

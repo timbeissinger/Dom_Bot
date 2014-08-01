@@ -1,0 +1,12 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.2 loaded 
+Extra args must be given as -par VALUE
+	-> [abcFilter.cpp] Reading binary representation:/home/beissing/Dom_Bot_Git/TEMP/intersect.TIL.BKN_intergenic_10.txt
+	-> [abcFilter.cpp] nChr: 1 loaded from binary filter file
+	-> [abcFilter.cpp] -sites is still beta, use at own risk...
+	-> Reading fasta: DATA/TRIP/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+/var/spool/slurmd/job1206089/slurm_script: line 41: 33833 Segmentation fault      (core dumped) $angsdir/angsd $command1
+Problem opening file: /home/beissing/Dom_Bot_Git/THETAS/TIL_intergenic_10_windows_overlapping.thetas.gz
+	Assuming binfile:/home/beissing/Dom_Bot_Git/THETAS/TIL_intergenic_10_windows_overlapping.thetas.gz.bin and indexfile:/home/beissing/Dom_Bot_Git/THETAS/TIL_intergenic_10_windows_overlapping.thetas.gz.idx
+Problem opening file: /home/beissing/Dom_Bot_Git/THETAS/TIL_intergenic_10_windows_overlapping.thetas.gz.idx

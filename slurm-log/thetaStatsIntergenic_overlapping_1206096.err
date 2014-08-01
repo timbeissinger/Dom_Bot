@@ -1,0 +1,106 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.2 loaded 
+fname1:/home/beissing/Dom_Bot_Git/TEMP/TIL_intergenic_10_conditioned.saf nChr:26 startsfs:(null) nThreads:32 tole=0.000001 maxIter=100 nSites=2837037
+The choice of -nSites will require: 584.000000 megabyte memory, that is approx: 0.11% of total memory
+dim(GL1)=2837037,27
+startlik=-15936819.114769
+[0] lik=-1464637.453477 diff=1.44722e+07
+[1] lik=-1461486.391271 diff=3151.06
+[2] lik=-1461459.801465 diff=26.5898
+[3] lik=-1461458.095011 diff=1.70645
+[4] lik=-1461457.314254 diff=0.780757
+[5] lik=-1461456.840958 diff=0.473295
+[6] lik=-1461456.544508 diff=0.29645
+[7] lik=-1461456.355891 diff=0.188616
+[8] lik=-1461456.234296 diff=0.121595
+[9] lik=-1461456.154932 diff=0.0793645
+[10] lik=-1461456.102501 diff=0.0524303
+[11] lik=-1461456.067453 diff=0.0350486
+[12] lik=-1461456.043764 diff=0.0236892
+[13] lik=-1461456.027577 diff=0.016187
+[14] lik=-1461456.016414 diff=0.011163
+[15] lik=-1461456.008644 diff=0.00776922
+[16] lik=-1461456.003195 diff=0.00544919
+[17] lik=-1461455.999349 diff=0.00384603
+[18] lik=-1461455.996614 diff=0.00273485
+[19] lik=-1461455.994662 diff=0.00195218
+[20] lik=-1461455.993266 diff=0.00139596
+[21] lik=-1461455.992258 diff=0.00100816
+[22] lik=-1461455.991530 diff=0.000727779
+[23] lik=-1461455.991004 diff=0.000526296
+[24] lik=-1461455.990622 diff=0.000381948
+[25] lik=-1461455.990345 diff=0.0002774
+[26] lik=-1461455.990143 diff=0.000201966
+[27] lik=-1461455.989999 diff=0.000143975
+[28] lik=-1461455.989892 diff=0.000107077
+[29] lik=-1461455.989813 diff=7.85345e-05
+[30] lik=-1461455.989756 diff=5.6746e-05
+[31] lik=-1461455.989715 diff=4.17223e-05
+[32] lik=-1461455.989684 diff=3.06407e-05
+[33] lik=-1461455.989662 diff=2.24309e-05
+[34] lik=-1461455.989645 diff=1.60453e-05
+[35] lik=-1461455.989634 diff=1.19186e-05
+[36] lik=-1461455.989624 diff=9.0776e-06
+[37] lik=-1461455.989618 diff=6.28876e-06
+[38] lik=-1461455.989613 diff=4.8026e-06
+[39] lik=-1461455.989610 diff=3.2261e-06
+[40] lik=-1461455.989608 diff=2.64146e-06
+[41] lik=-1461455.989606 diff=1.96509e-06
+[42] lik=-1461455.989604 diff=1.41934e-06
+[43] lik=-1461455.989603 diff=9.05478e-07
+likelihood: -1461455.989603
+	-> [abcFilter.cpp] Reading binary representation:/home/beissing/Dom_Bot_Git/TEMP/intersect.TIL.BKN_intergenic_10.txt
+	-> [abcFilter.cpp] nChr: 1 loaded from binary filter file
+	-> [abcFilter.cpp] -sites is still beta, use at own risk...
+	-> Reading fasta: DATA/TRIP/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 13 number of samples 
+	-> Printing at chr: 10 pos:41469 chunknumber 100
+	-> Printing at chr: 10 pos:51866 chunknumber 200
+	-> Printing at chr: 10 pos:70533 chunknumber 300
+	-> Printing at chr: 10 pos:146882 chunknumber 400
+	-> Printing at chr: 10 pos:264639 chunknumber 500
+	-> Printing at chr: 10 pos:363510 chunknumber 600
+	-> Printing at chr: 10 pos:463790 chunknumber 700
+	-> Printing at chr: 10 pos:540453 chunknumber 800
+	-> Printing at chr: 10 pos:574035 chunknumber 900
+	-> Printing at chr: 10 pos:605824 chunknumber 1000
+	-> Printing at chr: 10 pos:656050 chunknumber 1100
+	-> Printing at chr: 10 pos:686428 chunknumber 1200
+	-> Printing at chr: 10 pos:724288 chunknumber 1300
+	-> Printing at chr: 10 pos:760547 chunknumber 1400
+	-> Printing at chr: 10 pos:781839 chunknumber 1500
+	-> Printing at chr: 10 pos:808792 chunknumber 1600
+	-> Printing at chr: 10 pos:836052 chunknumber 1700
+	-> Printing at chr: 10 pos:874077 chunknumber 1800
+	-> Printing at chr: 10 pos:936654 chunknumber 1900
+	-> Printing at chr: 10 pos:966593 chunknumber 2000
+	-> Printing at chr: 10 pos:1019972 chunknumber 2100
+	-> Printing at chr: 10 pos:1046574 chunknumber 2200
+	-> Printing at chr: 10 pos:1120926 chunknumber 2300
+	-> Printing at chr: 10 pos:1529498 chunknumber 2400
+	-> Printing at chr: 10 pos:1779439 chunknumber 2500
+	-> Printing at chr: 10 pos:1975101 chunknumber 2600
+	-> Printing at chr: 10 pos:2304869 chunknumber 2700
+	-> Printing at chr: 10 pos:2590093 chunknumber 2800
+	-> Printing at chr: 10 pos:2884527 chunknumber 2900
+	-> Printing at chr: 10 pos:3091181 chunknumber 3000
+	-> Printing at chr: 10 pos:3125777 chunknumber 3100
+	-> Printing at chr: 10 pos:3135553 chunknumber 3200
+	-> Printing at chr: 10 pos:3262360 chunknumber 3300
+	-> Printing at chr: 10 pos:3678719 chunknumber 3400
+	-> Printing at chr: 10 pos:3969970 chunknumber 3500
+	-> Printing at chr: 10 pos:4149048 chunknumber 3600
+	-> Printing at chr: 10 pos:4280790 chunknumber 3700
+	-> Printing at chr: 10 pos:4340774 chunknumber 3800
+	-> Printing at chr: 10 pos:4412451 chunknumber 3900
+	-> Printing at chr: 10 pos:4420590 chunknumber 4000
+	-> Printing at chr: 10 pos:4435143 chunknumber 4100
+	-> Printing at chr: 10 pos:4438301 chunknumber 4200
+	-> Printing at chr: 10 pos:4477165 chunknumber 4300
+	-> Printing at chr: 10 pos:4484563 chunknumber 4400
+	-> Printing at chr: 10 pos:4505027 chunknumber 4500
+	-> Printing at chr: 10 pos:4930463 chunknumber 4600
+	-> Printing at chr: 10 pos:5233033 chunknumber 4700
+	-> Printing at chr: 10 pos:5505295 chunknumber 4800

@@ -1,0 +1,52 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.2 loaded 
+fname1:/home/beissing/Dom_Bot_Git/TEMP/BKN_intergenic_10_conditioned.saf nChr:46 startsfs:(null) nThreads:32 tole=0.000001 maxIter=100 nSites=2837037
+The choice of -nSites will require: 1017.000000 megabyte memory, that is approx: 0.20% of total memory
+dim(GL1)=2837037,47
+startlik=-18944498.091245
+[0] lik=-1367466.430749 diff=1.7577e+07
+[1] lik=-1364212.937104 diff=3253.49
+[2] lik=-1364180.386003 diff=32.5511
+[3] lik=-1364179.203469 diff=1.18253
+[4] lik=-1364178.958489 diff=0.24498
+[5] lik=-1364178.856681 diff=0.101808
+[6] lik=-1364178.809282 diff=0.0473988
+[7] lik=-1364178.786549 diff=0.0227328
+[8] lik=-1364178.775481 diff=0.0110686
+[9] lik=-1364178.770036 diff=0.00544444
+[10] lik=-1364178.767330 diff=0.00270605
+[11] lik=-1364178.765979 diff=0.00135136
+[12] lik=-1364178.765299 diff=0.000680141
+[13] lik=-1364178.764956 diff=0.000342951
+[14] lik=-1364178.764782 diff=0.000174053
+[15] lik=-1364178.764693 diff=8.88854e-05
+[16] lik=-1364178.764648 diff=4.5028e-05
+[17] lik=-1364178.764624 diff=2.3254e-05
+[18] lik=-1364178.764612 diff=1.1994e-05
+[19] lik=-1364178.764607 diff=5.91204e-06
+[20] lik=-1364178.764603 diff=3.19583e-06
+[21] lik=-1364178.764602 diff=1.65147e-06
+[22] lik=-1364178.764601 diff=8.60309e-07
+likelihood: -1364178.764601
+	-> [abcFilter.cpp] Reading binary representation:/home/beissing/Dom_Bot_Git/TEMP/intersect.TIL.BKN_intergenic_10.txt
+	-> [abcFilter.cpp] nChr: 1 loaded from binary filter file
+	-> [abcFilter.cpp] -sites is still beta, use at own risk...
+	-> Reading fasta: DATA/TRIP/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 23 number of samples 
+	-> Printing at chr: 10 pos:179900 chunknumber 100
+	-> Printing at chr: 10 pos:468184 chunknumber 200
+	-> Printing at chr: 10 pos:960442 chunknumber 300
+	-> Printing at chr: 10 pos:1391194 chunknumber 400
+	-> Printing at chr: 10 pos:1780340 chunknumber 500
+	-> Printing at chr: 10 pos:2491005 chunknumber 600
+	-> Printing at chr: 10 pos:3131993 chunknumber 700
+	-> Printing at chr: 10 pos:3842727 chunknumber 800
+	-> Printing at chr: 10 pos:4416276 chunknumber 900
+	-> Printing at chr: 10 pos:4982367 chunknumber 1000
+	-> Printing at chr: 10 pos:5420373 chunknumber 1100
+	-> Printing at chr: 10 pos:6064095 chunknumber 1200
+	-> Printing at chr: 10 pos:6466196 chunknumber 1300
+	-> Printing at chr: 10 pos:6935296 chunknumber 1400
+	-> Printing at chr: 10 pos:7208110 chunknumber 1500
