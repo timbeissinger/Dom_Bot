@@ -1,0 +1,87 @@
+These are some initial thoughts for a domestication bottleneck paper.
+
+August 4, 2014
+
+Working title: Demographics and selection during the maize
+domestication bottleneck
+
+Observations thus far:
+	     1. We observe an excess of high frequency derived alleles
+	     (1d and 2d sfs)
+	     2. Tajima's D is higher in coding regions than in
+	     non-coding regions
+	     3. The observed 2d sfs can broadly be described via the
+	     domestication process that is already accepted.
+
+Study questions:
+      1. Does demography alone explain the observed patterns of
+      nucleotide variability?
+      2. Does purifying selection on maize explain the observed
+      patterns of nucleotide variability?
+      3. Do classic sweeps explain the observed patterns of nucleotide
+      variability?
+      4. Do soft sweeps explain the observed patterns of nucleotide
+      variability?
+      5. Do soft sweeps explain the observed patterns of nucleotide
+      variability?
+      6. Do combinations of the above explain the observed patterns of
+      nucleotide variability?
+
+Study methods:
+      1. Demography explanation:
+      	 i. Comparisons: genes vs. non-genes, CNS vs. NNS
+	    a. Already done this to a certain extent, different genes
+      	    in functional elements (genes, so far) suggest that demography
+      	    is only part of the explanation.
+
+      2. Purifying selection:
+      	 i. Deleterious alleles in teosinte vs maize (should not be
+      	 equal if purifying selection has been stronger in maize)
+
+      3. Classic sweeps:
+      	 i. I hypothesize this is an unlikely explanation given the
+      	 mutation rate and recent split between maize and teosinte.
+	 ii. Test using methods from Hernandez et al, 2011 Science
+      	 paper (humans), look at average diversity as a function of
+      	 distance to nearest gene/exon/CNS.
+	 iii. Perform simulations.
+
+      4. Soft sweeps:
+      	 i. I hypothisize that this is a large part of the observed
+      	 levels of nucleotide variability in maize. Soft sweeps are
+      	 expected from a bottleneck, as we know occured during maize
+      	 domestication.
+	 ii. Hard to test, since soft sweeps leave a weak pattern of
+      	 selection in the genome. Thoughts needed here...
+	 iii. Simulations may be used to determine whether the
+      	 observed data can be explained via widespread soft sweeps.
+
+      5. Partial sweeps:
+      	 i. Whether arising from new mutations or standing variation,
+      	 partial sweeps can lead to increased variation, may be a part
+      	 of the reason for elevated Tajima's D. Also, these might be
+      	 expected due to many favorable maize traits being highly
+      	 quantitative (and probably polygenic).
+	 ii. Perhaps test for these by looking for enrichment of
+      	 regions with elevated diversity in maize functional regions
+      	 (genes, CNS) compared to teosinte.
+
+Predicted abstract/introduction (just to organize thoughts):
+	  Yada, yada, yada... We find that models consisting of only
+	  demographic history, purifying selection, and classic (hard)
+	  sweeps provide an insufficient explanation for the observed
+	  patterns of nucleotide diversity in maize. Conversely,
+	  widespread soft sweeps and partial sweeps are likely to have
+	  played a primary role in shaping the maize genome. This is
+	  evidenced by X, Y, and Z. Herein, we first develop a
+	  demographic model that is a refinement of previous estimates
+	  of the maize domestication process based on the joint sfs
+	  between maize and teosinte at only noncoding sites. Next, we
+	  demonstrate that this model alone, even when coupled with
+	  rampant purifying selection, does not adequately explain the
+	  observed data. Finally, we test the hypothesis that soft
+	  sweeps (selection on standing variation) coupled with
+	  partial sweeps (selection to intermediate frequencies) were
+	  common during maize domestication, and we establish that
+	  these forces are the primary driver of the patterns of
+	  variability observed in maize. ... Yada, yada, yada.
