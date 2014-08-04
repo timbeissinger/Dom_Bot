@@ -2,3 +2,5 @@ Taxon = TIL
 File append = 
 /home/beissing/Dom_Bot_Git/TEMP/TIL_genic_10_conditioned.saf 26 -P 32
 -bam DATA/LISTS/TIL_list.txt -out THETAS/TIL_ -pest SFS/TIL_genic_10_conditioned.sfs -indF DATA/INBREEDING/TIL.indF -doSaf 2 -uniqueOnly 0 -anc DATA/TRIP/TRIP.fa.gz -minMapQ 30 -minQ 20 -nInd 13 -minInd 10 -baq 1 -ref /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa -GL 1 -P 32 -rf /home/beissing/Dom_Bot_Git/genic/genicRegionFile_chr10.txt -doThetas 1 -doMajorMinor 1 -doMaf 1 -sites /home/beissing/Dom_Bot_Git/TEMP/intersect.TIL.BKN_genic_10.txt
+make_bed /home/beissing/Dom_Bot_Git/THETAS/TIL_.thetas.gz
+do_stat /home/beissing/Dom_Bot_Git/THETAS/TIL_.thetas.gz -nChr 26 -win 1000 -step 500
