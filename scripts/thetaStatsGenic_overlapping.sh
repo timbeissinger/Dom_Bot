@@ -14,8 +14,7 @@
 angsdir=/home/beissing/bin/angsd0.609
 
 taxon=$1
-sfs=$2
-append=$3
+append=$2
 nInd=$( wc -l DATA/LISTS/"$taxon"_list.txt | cut -f 1 -d " " )
 n=$( expr 2 \* $nInd )
 minperc=0.8
