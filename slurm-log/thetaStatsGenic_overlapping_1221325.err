@@ -475,3 +475,28 @@ likelihood: -1362047.682082
 	-> Printing at chr: 10 pos:148434414 chunknumber 43400
 	-> Printing at chr: 10 pos:148738549 chunknumber 43500
 	-> Printing at chr: 10 pos:148825660 chunknumber 43600
+	-> Printing at chr: 10 pos:148985897 chunknumber 43700
+	-> Printing at chr: 10 pos:149185724 chunknumber 43800
+
+	-> Done reading data waiting for calculations to finish
+	-> Calling destroy
+	-> Done waiting for threads
+	-> Output filenames:
+		->"THETAS/TIL_genic_10_windows_overlapping.arg"
+		->"THETAS/TIL_genic_10_windows_overlapping.mafs.gz"
+		->"THETAS/TIL_genic_10_windows_overlapping.thetas.gz"
+	-> Mon Aug  4 17:55:34 2014
+	-> Arguments and parameters for all analysis are located in .arg file
+	[ALL done] cpu-time used =  9266.30 sec
+	[ALL done] walltime used =  9507.00 sec
+	Writing: chr:10 with nSites:3830849
+	Done writing: 10
+	Has dumped files:
+		'/home/beissing/Dom_Bot_Git/THETAS/TIL_genic_10_windows_overlapping.thetas.gz.bin'
+		'/home/beissing/Dom_Bot_Git/THETAS/TIL_genic_10_windows_overlapping.thetas.gz.idx'
+	Assuming binfile:/home/beissing/Dom_Bot_Git/THETAS/TIL_genic_10_windows_overlapping.thetas.gz.bin and indexfile:/home/beissing/Dom_Bot_Git/THETAS/TIL_genic_10_windows_overlapping.thetas.gz.idx
+		Information from index file:
+		0	10	3830849	0
+	 -r=(null) outnames=(null) step: 500 win: 1000 nChr:26
+	pc.chr=10 pc.nSites=3830849 firstpos=300326 lastpos=149531492
+	Dumping file: "/home/beissing/Dom_Bot_Git/THETAS/TIL_genic_10_windows_overlapping.thetas.gz.pestPG"
