@@ -1,0 +1,52 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.2 loaded 
+	-> Reading fasta: /home/beissing/Dom_Bot_Git/DATA/TRIP/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 13 number of samples 
+	-> Printing at chr: 1 pos:138409 chunknumber 100
+	-> Printing at chr: 1 pos:385455 chunknumber 200
+	-> Printing at chr: 1 pos:832749 chunknumber 300
+	-> Printing at chr: 1 pos:1037252 chunknumber 400
+	-> Printing at chr: 1 pos:1499004 chunknumber 500
+	-> Printing at chr: 1 pos:1786625 chunknumber 600
+	-> Printing at chr: 1 pos:2086343 chunknumber 700
+	-> Printing at chr: 1 pos:2208992 chunknumber 800
+	-> Printing at chr: 1 pos:2465240 chunknumber 900
+	-> Printing at chr: 1 pos:2726656 chunknumber 1000
+	-> Printing at chr: 1 pos:2784951 chunknumber 1100
+	-> Printing at chr: 1 pos:2868620 chunknumber 1200
+	-> Printing at chr: 1 pos:2993457 chunknumber 1300
+	-> Printing at chr: 1 pos:3073145 chunknumber 1400
+	-> Printing at chr: 1 pos:3193609 chunknumber 1500
+	-> Printing at chr: 1 pos:3354958 chunknumber 1600
+	-> Printing at chr: 1 pos:3556505 chunknumber 1700
+	-> Printing at chr: 1 pos:3706632 chunknumber 1800
+	-> Printing at chr: 1 pos:3873725 chunknumber 1900
+	-> Printing at chr: 1 pos:4013709 chunknumber 2000
+	-> Printing at chr: 1 pos:4061249 chunknumber 2100
+	-> Printing at chr: 1 pos:4205448 chunknumber 2200
+	-> Printing at chr: 1 pos:4347774 chunknumber 2300
+	-> Printing at chr: 1 pos:4608057 chunknumber 2400
+	-> Printing at chr: 1 pos:4857213 chunknumber 2500
+	-> Printing at chr: 1 pos:4986841 chunknumber 2600
+	-> Printing at chr: 1 pos:5041549 chunknumber 2700
+	-> Printing at chr: 1 pos:5375083 chunknumber 2800
+	-> Printing at chr: 1 pos:5533599 chunknumber 2900
+	-> Printing at chr: 1 pos:5724930 chunknumber 3000
+	-> Printing at chr: 1 pos:5805659 chunknumber 3100
+	-> Printing at chr: 1 pos:5948326 chunknumber 3200
+	-> Printing at chr: 1 pos:6013382 chunknumber 3300
+	-> Printing at chr: 1 pos:6074517 chunknumber 3400
+	-> Printing at chr: 1 pos:6214280 chunknumber 3500
+	-> Printing at chr: 1 pos:6405453 chunknumber 3600
+	-> Printing at chr: 1 pos:6551729 chunknumber 3700
+	-> Printing at chr: 1 pos:6835626 chunknumber 3800
+	-> Printing at chr: 1 pos:7037360 chunknumber 3900
+	-> Printing at chr: 1 pos:7106941 chunknumber 4000
+	-> Printing at chr: 1 pos:7252384 chunknumber 4100
+	-> Printing at chr: 1 pos:7353360 chunknumber 4200
+	-> Printing at chr: 1 pos:7559069 chunknumber 4300
+	-> Printing at chr: 1 pos:7689669 chunknumber 4400
+	-> Printing at chr: 1 pos:7961136 chunknumber 4500
+	-> Printing at chr: 1 pos:8089840 chunknumber 4600
