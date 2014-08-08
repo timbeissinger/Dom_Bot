@@ -1,0 +1,450 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.2 loaded 
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 13 number of samples 
+	-> Printing at chr: 3 pos:9454613 chunknumber 100
+Problem with length of fastafile vs length of chr in BAM header
+Chromosome name: '5' length from BAM header:217959525 length from fai file:69231399
+
+	-> Done reading data waiting for calculations to finish
+	-> Calling destroy
+	-> Done waiting for threads
+	-> Output filenames:
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic.arg"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic.mafs.gz"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic.saf"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic.saf.pos.gz"
+	-> Fri Aug  8 13:47:58 2014
+	-> Arguments and parameters for all analysis are located in .arg file
+	[ALL done] cpu-time used =  58.83 sec
+	[ALL done] walltime used =  49.00 sec
+fname1:/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic.saf nChr:26 startsfs:(null) nThreads:32 tole=0.000001 maxIter=100 nSites=9252
+The choice of -nSites will require: 1.000000 megabyte memory, that is approx: 0.00% of total memory
+dim(GL1)=9252,27
+startlik=-52514.200398
+[0] lik=-3645.464042 diff=48868.7
+[1] lik=-3639.697592 diff=5.76645
+[2] lik=-3639.493718 diff=0.203874
+[3] lik=-3639.447399 diff=0.0463196
+[4] lik=-3639.426132 diff=0.0212667
+[5] lik=-3639.412973 diff=0.0131594
+[6] lik=-3639.403542 diff=0.0094307
+[7] lik=-3639.396280 diff=0.00726214
+[8] lik=-3639.390497 diff=0.005783
+[9] lik=-3639.385824 diff=0.00467232
+[10] lik=-3639.382030 diff=0.00379471
+[11] lik=-3639.378945 diff=0.00308458
+[12] lik=-3639.376440 diff=0.0025047
+[13] lik=-3639.374410 diff=0.00203028
+[14] lik=-3639.372768 diff=0.00164265
+[15] lik=-3639.371441 diff=0.00132678
+[16] lik=-3639.370371 diff=0.00107011
+[17] lik=-3639.369508 diff=0.000862121
+[18] lik=-3639.368815 diff=0.000693971
+[19] lik=-3639.368256 diff=0.000558297
+[20] lik=-3639.367807 diff=0.000448997
+[21] lik=-3639.367446 diff=0.000361054
+[22] lik=-3639.367156 diff=0.000290362
+[23] lik=-3639.366922 diff=0.000233576
+[24] lik=-3639.366734 diff=0.000187984
+[25] lik=-3639.366583 diff=0.000151393
+[26] lik=-3639.366461 diff=0.00012203
+[27] lik=-3639.366362 diff=9.84704e-05
+[28] lik=-3639.366283 diff=7.95667e-05
+[29] lik=-3639.366218 diff=6.43969e-05
+[30] lik=-3639.366166 diff=5.22212e-05
+[31] lik=-3639.366124 diff=4.24456e-05
+[32] lik=-3639.366089 diff=3.4594e-05
+[33] lik=-3639.366061 diff=2.82846e-05
+[34] lik=-3639.366038 diff=2.32113e-05
+[35] lik=-3639.366019 diff=1.9129e-05
+[36] lik=-3639.366003 diff=1.58411e-05
+[37] lik=-3639.365989 diff=1.31902e-05
+[38] lik=-3639.365978 diff=1.10501e-05
+[39] lik=-3639.365969 diff=9.31972e-06
+[40] lik=-3639.365961 diff=7.91809e-06
+[41] lik=-3639.365954 diff=6.78035e-06
+[42] lik=-3639.365949 diff=5.85448e-06
+[43] lik=-3639.365943 diff=5.09879e-06
+[44] lik=-3639.365939 diff=4.47993e-06
+[45] lik=-3639.365935 diff=3.97111e-06
+[46] lik=-3639.365931 diff=3.55088e-06
+[47] lik=-3639.365928 diff=3.20206e-06
+[48] lik=-3639.365925 diff=2.91081e-06
+[49] lik=-3639.365923 diff=2.66611e-06
+[50] lik=-3639.365920 diff=2.45904e-06
+[51] lik=-3639.365918 diff=2.28253e-06
+[52] lik=-3639.365916 diff=2.13084e-06
+[53] lik=-3639.365914 diff=1.9993e-06
+[54] lik=-3639.365912 diff=1.88437e-06
+[55] lik=-3639.365910 diff=1.78296e-06
+[56] lik=-3639.365908 diff=1.6927e-06
+[57] lik=-3639.365907 diff=1.6117e-06
+[58] lik=-3639.365905 diff=1.53839e-06
+[59] lik=-3639.365904 diff=1.47153e-06
+[60] lik=-3639.365902 diff=1.41008e-06
+[61] lik=-3639.365901 diff=1.35323e-06
+[62] lik=-3639.365900 diff=1.30034e-06
+[63] lik=-3639.365899 diff=1.25083e-06
+[64] lik=-3639.365897 diff=1.20429e-06
+[65] lik=-3639.365896 diff=1.16033e-06
+[66] lik=-3639.365895 diff=1.11869e-06
+[67] lik=-3639.365894 diff=1.07909e-06
+[68] lik=-3639.365893 diff=1.04133e-06
+[69] lik=-3639.365892 diff=1.00527e-06
+[70] lik=-3639.365891 diff=9.70728e-07
+likelihood: -3639.365891
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 23 number of samples 
+Problem with length of fastafile vs length of chr in BAM header
+Chromosome name: '5' length from BAM header:217959525 length from fai file:69231399
+
+	-> Done reading data waiting for calculations to finish
+	-> Calling destroy
+	-> Done waiting for threads
+	-> Output filenames:
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic.arg"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic.mafs.gz"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic.saf"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic.saf.pos.gz"
+	-> Fri Aug  8 13:48:48 2014
+	-> Arguments and parameters for all analysis are located in .arg file
+	[ALL done] cpu-time used =  64.89 sec
+	[ALL done] walltime used =  50.00 sec
+fname1:/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic.saf nChr:46 startsfs:(null) nThreads:32 tole=0.000001 maxIter=100 nSites=9700
+The choice of -nSites will require: 3.000000 megabyte memory, that is approx: 0.00% of total memory
+dim(GL1)=9700,47
+startlik=-64191.810917
+[0] lik=-4862.240366 diff=59329.6
+[1] lik=-4853.859475 diff=8.38089
+[2] lik=-4853.141953 diff=0.717522
+[3] lik=-4852.947626 diff=0.194326
+[4] lik=-4852.872888 diff=0.0747389
+[5] lik=-4852.836957 diff=0.0359311
+[6] lik=-4852.816429 diff=0.0205272
+[7] lik=-4852.803040 diff=0.0133894
+[8] lik=-4852.793412 diff=0.00962829
+[9] lik=-4852.785989 diff=0.00742229
+[10] lik=-4852.779983 diff=0.00600635
+[11] lik=-4852.774959 diff=0.00502447
+[12] lik=-4852.770662 diff=0.00429694
+[13] lik=-4852.766934 diff=0.00372742
+[14] lik=-4852.763672 diff=0.00326195
+[15] lik=-4852.760803 diff=0.00286926
+[16] lik=-4852.758272 diff=0.00253063
+[17] lik=-4852.756038 diff=0.00223445
+[18] lik=-4852.754065 diff=0.00197317
+[19] lik=-4852.752323 diff=0.00174161
+[20] lik=-4852.750787 diff=0.00153596
+[21] lik=-4852.749434 diff=0.00135325
+[22] lik=-4852.748243 diff=0.00119099
+[23] lik=-4852.747196 diff=0.00104708
+[24] lik=-4852.746276 diff=0.00091961
+[25] lik=-4852.745469 diff=0.000806882
+[26] lik=-4852.744762 diff=0.000707345
+[27] lik=-4852.744142 diff=0.000619586
+[28] lik=-4852.743600 diff=0.00054232
+[29] lik=-4852.743126 diff=0.000474381
+[30] lik=-4852.742711 diff=0.000414711
+[31] lik=-4852.742349 diff=0.000362361
+[32] lik=-4852.742032 diff=0.000316474
+[33] lik=-4852.741756 diff=0.000276288
+[34] lik=-4852.741515 diff=0.000241119
+[35] lik=-4852.741304 diff=0.000210362
+[36] lik=-4852.741121 diff=0.000183478
+[37] lik=-4852.740961 diff=0.000159992
+[38] lik=-4852.740821 diff=0.000139483
+[39] lik=-4852.740700 diff=0.000121581
+[40] lik=-4852.740594 diff=0.00010596
+[41] lik=-4852.740502 diff=9.23331e-05
+[42] lik=-4852.740421 diff=8.04489e-05
+[43] lik=-4852.740351 diff=7.00869e-05
+[44] lik=-4852.740290 diff=6.10539e-05
+[45] lik=-4852.740237 diff=5.31809e-05
+[46] lik=-4852.740190 diff=4.63198e-05
+[47] lik=-4852.740150 diff=4.03415e-05
+[48] lik=-4852.740115 diff=3.51328e-05
+[49] lik=-4852.740084 diff=3.05953e-05
+[50] lik=-4852.740058 diff=2.66428e-05
+[51] lik=-4852.740035 diff=2.32e-05
+[52] lik=-4852.740014 diff=2.02015e-05
+[53] lik=-4852.739997 diff=1.759e-05
+[54] lik=-4852.739981 diff=1.53158e-05
+[55] lik=-4852.739968 diff=1.33354e-05
+[56] lik=-4852.739956 diff=1.16108e-05
+[57] lik=-4852.739946 diff=1.01091e-05
+[58] lik=-4852.739938 diff=8.80155e-06
+[59] lik=-4852.739930 diff=7.663e-06
+[60] lik=-4852.739923 diff=6.67166e-06
+[61] lik=-4852.739917 diff=5.80853e-06
+[62] lik=-4852.739912 diff=5.05701e-06
+[63] lik=-4852.739908 diff=4.40271e-06
+[64] lik=-4852.739904 diff=3.83302e-06
+[65] lik=-4852.739901 diff=3.33706e-06
+[66] lik=-4852.739898 diff=2.90524e-06
+[67] lik=-4852.739895 diff=2.52929e-06
+[68] lik=-4852.739893 diff=2.20198e-06
+[69] lik=-4852.739891 diff=1.91703e-06
+[70] lik=-4852.739890 diff=1.66895e-06
+[71] lik=-4852.739888 diff=1.45296e-06
+[72] lik=-4852.739887 diff=1.26494e-06
+[73] lik=-4852.739886 diff=1.10122e-06
+[74] lik=-4852.739885 diff=9.58716e-07
+likelihood: -4852.739885
+	-> Filterfile: /home/beissing/Dom_Bot_Git/WholeGenome/OUTS/intersect.TIL.BKN_intergenic.txt supplied will generate binary representations...
+	-> Parsing chr:'2'
+	-> Parsing chr:'3'
+	-> Filtering complete: Observed: 2 different chromosomes from file:/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/intersect.TIL.BKN_intergenic.txt
+	-> [abcFilter.cpp] Reading binary representation:/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/intersect.TIL.BKN_intergenic.txt
+	-> [abcFilter.cpp] nChr: 2 loaded from binary filter file
+	-> [abcFilter.cpp] -sites is still beta, use at own risk...
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 13 number of samples 
+	-> Printing at chr: 3 pos:9454613 chunknumber 100
+
+	-> Potential problem: The filereading has reached a chromsome: '4', which is not included in your '-sites' file.
+	-> Please consider limiting your analysis to the chromsomes of interest 
+	-> see 'http://www.popgen.dk/angsd/index.php/Sites' for more information
+	-> Program will continue reading this chromosome... 
+
+	-> Potential problem: The filereading has reached a chromsome: '5', which is not included in your '-sites' file.
+	-> Please consider limiting your analysis to the chromsomes of interest 
+	-> see 'http://www.popgen.dk/angsd/index.php/Sites' for more information
+	-> Program will continue reading this chromosome... 
+Problem with length of fastafile vs length of chr in BAM header
+Chromosome name: '5' length from BAM header:217959525 length from fai file:69231399
+
+	-> Done reading data waiting for calculations to finish
+	-> Calling destroy
+	-> Done waiting for threads
+	-> Output filenames:
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic_conditioned.arg"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic_conditioned.mafs.gz"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic_conditioned.saf"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic_conditioned.saf.pos.gz"
+	-> Fri Aug  8 13:49:40 2014
+	-> Arguments and parameters for all analysis are located in .arg file
+	[ALL done] cpu-time used =  63.99 sec
+	[ALL done] walltime used =  51.00 sec
+	-> [abcFilter.cpp] Reading binary representation:/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/intersect.TIL.BKN_intergenic.txt
+	-> [abcFilter.cpp] nChr: 2 loaded from binary filter file
+	-> [abcFilter.cpp] -sites is still beta, use at own risk...
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 23 number of samples 
+
+	-> Potential problem: The filereading has reached a chromsome: '4', which is not included in your '-sites' file.
+	-> Please consider limiting your analysis to the chromsomes of interest 
+	-> see 'http://www.popgen.dk/angsd/index.php/Sites' for more information
+	-> Program will continue reading this chromosome... 
+
+	-> Potential problem: The filereading has reached a chromsome: '5', which is not included in your '-sites' file.
+	-> Please consider limiting your analysis to the chromsomes of interest 
+	-> see 'http://www.popgen.dk/angsd/index.php/Sites' for more information
+	-> Program will continue reading this chromosome... 
+Problem with length of fastafile vs length of chr in BAM header
+Chromosome name: '5' length from BAM header:217959525 length from fai file:69231399
+
+	-> Done reading data waiting for calculations to finish
+	-> Calling destroy
+	-> Done waiting for threads
+	-> Output filenames:
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic_conditioned.arg"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic_conditioned.mafs.gz"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic_conditioned.saf"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic_conditioned.saf.pos.gz"
+	-> Fri Aug  8 13:50:29 2014
+	-> Arguments and parameters for all analysis are located in .arg file
+	[ALL done] cpu-time used =  66.07 sec
+	[ALL done] walltime used =  49.00 sec
+fname1:/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic_conditioned.saffname2:/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic_conditioned.saf chr1:26 chr2:46 startsfs:(null) nThreads=32 tole=0.000001 maxIter=100 nSites:-1
+startlik=-113505.739555
+[0] lik=-4499.313875 diff=109006
+[1] lik=-4475.671458 diff=23.6424
+[2] lik=-4472.090554 diff=3.5809
+[3] lik=-4470.722610 diff=1.36794
+[4] lik=-4470.034268 diff=0.688342
+[5] lik=-4469.636738 diff=0.39753
+[6] lik=-4469.389070 diff=0.247668
+[7] lik=-4469.227374 diff=0.161696
+[8] lik=-4469.118253 diff=0.109121
+[9] lik=-4469.042632 diff=0.0756211
+[10] lik=-4468.988995 diff=0.0536364
+[11] lik=-4468.950132 diff=0.0388627
+[12] lik=-4468.921408 diff=0.0287249
+[13] lik=-4468.899777 diff=0.0216305
+[14] lik=-4468.883206 diff=0.016571
+[15] lik=-4468.870310 diff=0.012896
+[16] lik=-4468.860131 diff=0.010179
+[17] lik=-4468.851995 diff=0.00813635
+[18] lik=-4468.845418 diff=0.00657643
+[19] lik=-4468.840050 diff=0.00536786
+[20] lik=-4468.835631 diff=0.00441917
+[21] lik=-4468.831966 diff=0.00366571
+[22] lik=-4468.828905 diff=0.00306104
+[23] lik=-4468.826333 diff=0.00257127
+[24] lik=-4468.824162 diff=0.00217132
+[25] lik=-4468.822320 diff=0.00184237
+[26] lik=-4468.820749 diff=0.00157007
+[27] lik=-4468.819406 diff=0.00134337
+[28] lik=-4468.818252 diff=0.00115368
+[29] lik=-4468.817258 diff=0.0009942
+[30] lik=-4468.816399 diff=0.000859562
+[31] lik=-4468.815653 diff=0.00074545
+[32] lik=-4468.815005 diff=0.000648383
+[33] lik=-4468.814439 diff=0.000565536
+[34] lik=-4468.813945 diff=0.000494602
+[35] lik=-4468.813511 diff=0.000433685
+[36] lik=-4468.813130 diff=0.00038122
+[37] lik=-4468.812794 diff=0.000335913
+[38] lik=-4468.812497 diff=0.000296684
+[39] lik=-4468.812235 diff=0.000262633
+[40] lik=-4468.812002 diff=0.000233004
+[41] lik=-4468.811794 diff=0.000207163
+[42] lik=-4468.811610 diff=0.000184576
+[43] lik=-4468.811445 diff=0.000164788
+[44] lik=-4468.811298 diff=0.000147415
+[45] lik=-4468.811165 diff=0.000132132
+[46] lik=-4468.811047 diff=0.00011866
+[47] lik=-4468.810940 diff=0.00010676
+[48] lik=-4468.810844 diff=9.6229e-05
+[49] lik=-4468.810757 diff=8.68918e-05
+[50] lik=-4468.810678 diff=7.85977e-05
+[51] lik=-4468.810607 diff=7.1217e-05
+[52] lik=-4468.810543 diff=6.46371e-05
+[53] lik=-4468.810484 diff=5.87611e-05
+[54] lik=-4468.810430 diff=5.35046e-05
+[55] lik=-4468.810381 diff=4.87944e-05
+[56] lik=-4468.810337 diff=4.45667e-05
+[57] lik=-4468.810296 diff=4.07659e-05
+[58] lik=-4468.810259 diff=3.73435e-05
+[59] lik=-4468.810225 diff=3.42567e-05
+[60] lik=-4468.810193 diff=3.14685e-05
+[61] lik=-4468.810164 diff=2.8946e-05
+[62] lik=-4468.810137 diff=2.66605e-05
+[63] lik=-4468.810113 diff=2.45866e-05
+[64] lik=-4468.810090 diff=2.2702e-05
+[65] lik=-4468.810069 diff=2.09869e-05
+[66] lik=-4468.810050 diff=1.94239e-05
+[67] lik=-4468.810032 diff=1.79974e-05
+[68] lik=-4468.810015 diff=1.66938e-05
+[69] lik=-4468.810000 diff=1.55008e-05
+[70] lik=-4468.809985 diff=1.44077e-05
+[71] lik=-4468.809972 diff=1.34048e-05
+[72] lik=-4468.809959 diff=1.24834e-05
+[73] lik=-4468.809948 diff=1.16359e-05
+[74] lik=-4468.809937 diff=1.08554e-05
+[75] lik=-4468.809927 diff=1.01358e-05
+[76] lik=-4468.809917 diff=9.47147e-06
+[77] lik=-4468.809908 diff=8.85753e-06
+[78] lik=-4468.809900 diff=8.28952e-06
+[79] lik=-4468.809892 diff=7.76346e-06
+[80] lik=-4468.809885 diff=7.27574e-06
+[81] lik=-4468.809878 diff=6.82314e-06
+[82] lik=-4468.809872 diff=6.40259e-06
+[83] lik=-4468.809866 diff=6.01163e-06
+[84] lik=-4468.809860 diff=5.64767e-06
+[85] lik=-4468.809855 diff=5.30868e-06
+[86] lik=-4468.809850 diff=4.99261e-06
+[87] lik=-4468.809845 diff=4.69768e-06
+[88] lik=-4468.809841 diff=4.42223e-06
+[89] lik=-4468.809836 diff=4.1648e-06
+[90] lik=-4468.809833 diff=3.92406e-06
+[91] lik=-4468.809829 diff=3.69871e-06
+[92] lik=-4468.809825 diff=3.48766e-06
+[93] lik=-4468.809822 diff=3.28986e-06
+[94] lik=-4468.809819 diff=3.10437e-06
+[95] lik=-4468.809816 diff=2.93032e-06
+[96] lik=-4468.809813 diff=2.76688e-06
+[97] lik=-4468.809811 diff=2.61338e-06
+[98] lik=-4468.809808 diff=2.46906e-06
+[99] lik=-4468.809806 diff=2.33336e-06
+likelihood: -inf
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 13 number of samples 
+	-> Printing at chr: 3 pos:9454613 chunknumber 100
+Problem with length of fastafile vs length of chr in BAM header
+Chromosome name: '5' length from BAM header:217959525 length from fai file:69231399
+
+	-> Done reading data waiting for calculations to finish
+	-> Calling destroy
+	-> Done waiting for threads
+	-> Output filenames:
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic_windows.arg"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic_windows.mafs.gz"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic_windows.thetas.gz"
+	-> Fri Aug  8 13:51:22 2014
+	-> Arguments and parameters for all analysis are located in .arg file
+	[ALL done] cpu-time used =  57.98 sec
+	[ALL done] walltime used =  44.00 sec
+	Writing: chr:2 with nSites:8729
+	Done writing: 2
+	Writing: chr:3 with nSites:504
+	Done writing: 3
+	Writing: chr:5 with nSites:19
+	Done writing: 5
+	Has dumped files:
+		'/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic_windows.thetas.gz.bin'
+		'/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic_windows.thetas.gz.idx'
+	Assuming binfile:/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic_windows.thetas.gz.bin and indexfile:/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic_windows.thetas.gz.idx
+		Information from index file:
+		0	2	8729	0
+		1	3	504	5504381545
+		2	5	19	5504393658
+	 -r=(null) outnames=(null) step: 1000 win: 1000 nChr:26
+	pc.chr=2 pc.nSites=8729 firstpos=223959546 lastpos=223980381
+	pc.chr=3 pc.nSites=504 firstpos=9461934 lastpos=9463884
+	pc.chr=5 pc.nSites=19 firstpos=4797758 lastpos=4797777
+end of dataset is before end of window: end of window:4799000 last position in chr:4797777
+	Dumping file: "/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic_windows.thetas.gz.pestPG"
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/TRIP.fa.gz
+	-> Reading fasta: /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+	->(Using Filipe modification of: abcSaf.cpp)
+	-> Parsing 23 number of samples 
+Problem with length of fastafile vs length of chr in BAM header
+Chromosome name: '5' length from BAM header:217959525 length from fai file:69231399
+
+	-> Done reading data waiting for calculations to finish
+	-> Calling destroy
+	-> Done waiting for threads
+	-> Output filenames:
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic_windows.arg"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic_windows.mafs.gz"
+		->"/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic_windows.thetas.gz"
+	-> Fri Aug  8 13:52:08 2014
+	-> Arguments and parameters for all analysis are located in .arg file
+	[ALL done] cpu-time used =  63.09 sec
+	[ALL done] walltime used =  45.00 sec
+	Writing: chr:2 with nSites:8831
+	Done writing: 2
+	Writing: chr:3 with nSites:504
+	Done writing: 3
+	Writing: chr:4 with nSites:66
+	Done writing: 4
+	Writing: chr:5 with nSites:299
+	Done writing: 5
+	Has dumped files:
+		'/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic_windows.thetas.gz.bin'
+		'/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic_windows.thetas.gz.idx'
+	Assuming binfile:/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic_windows.thetas.gz.bin and indexfile:/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic_windows.thetas.gz.idx
+		Information from index file:
+		0	2	8831	0
+		1	3	504	5884689401
+		2	4	66	5884701514
+		3	5	299	5884703115
+	 -r=(null) outnames=(null) step: 1000 win: 1000 nChr:46
+	pc.chr=2 pc.nSites=8831 firstpos=223959818 lastpos=223980381
+	pc.chr=3 pc.nSites=504 firstpos=9461934 lastpos=9463884
+	pc.chr=4 pc.nSites=66 firstpos=7194469 lastpos=7194534
+end of dataset is before end of window: end of window:7196000 last position in chr:7194534
+	pc.chr=5 pc.nSites=299 firstpos=4796721 lastpos=4845336
+	Dumping file: "/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic_windows.thetas.gz.pestPG"
