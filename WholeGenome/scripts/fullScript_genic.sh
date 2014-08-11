@@ -21,10 +21,10 @@ set -u
 pop1=TIL
 pop2=BKN
 
-angsdir=/home/beissing/bin/angsd0.609
+angsdir=/home/beissing/bin/angsd0.610
 outputdir=/home/beissing/Dom_Bot_Git/WholeGenome/OUTS
 ref=/group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
-anc=/group/jrigrp3/bottleneckProject/genomes/TRIP.fa.gz
+anc=/group/jrigrp3/bottleneckProject/genomes/TRIP.fa
 pop1List=INS/"$pop1"_list.txt
 pop2List=INS/"$pop2"_list.txt
 nIndPop1=$( wc -l "$pop1List" | cut -f 1 -d " " )
