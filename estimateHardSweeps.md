@@ -7,20 +7,21 @@
 ### Step 1
 Compute the diversity per site for every bp in the maize (and teosinte)  genome with data. It may be necessary to "correct for systematic variation in the mutation rate" by dividing by the maize-tripsicum/teosinte-tripsicum divergence, similar to what was done by Hernandez et al (2011, pg 920).
 
-
 ### Step 2
-Identify potentially functional substitutions (amino acid substitutions) and potentially neutral substitutions (e.g. synonymous, four-fold degenerate?). Do this for both maize and teosinte by comparing to tripsicum.
-
+Identify substitutions between tripsicum and maize, and tripsicum and teosinte. First, create separate vcf files for maize, teosinte, and tripsicum, aligning to the reference B73. Then, identify all loci that are fixed for reference in maize and/or teosinte and non-reference in tripsicum. (For teosinte, also look at loci fixed for non-reference in teosinte and reference in tripsicum...)
 
 ### Step 3
+Identify potentially functional substitutions (amino acid substitutions) and potentially neutral substitutions (e.g. synonymous, four-fold degenerate?). Do this for both maize and teosinte by comparing to tripsicum. 
+
+### Step 4
 For every bp in maize and teosinte with data, compute the distance from that bp to the nearest substitution of each class above (ie potentially functional, potentially neutral).
 
 
-### Step 4
+### Step 5
 Calculate, for each class above, the average diversity as a function of distance to the nearest substitution of each class. Do this for both maize and teosinte (so each taxa is comparable to a population in the Hernandez (2011) paper).
 
 
-### Step 5
+### Step 6
 Interpret the results--If diversity is lower around potentially functional substitutions for both maize and teosinte, this can be interpreted as evidence for wide-spread hard sweeps, at least during the evolution of teosinte. If diversity is not different surrounding potentially functional and potentially neutral substitutions for either maize or teosinte, this can be interpreted as evidence for a lack of wide-spread hard sweeps. If maize and teosinte differ, things get interesting. If maize shows evidence of reduced diversity around potentially functional sites but teosinte doesn't, this suggests that hard sweeps may have played a substantial role in the evolution of maize but not for teosinte. If teosinte shows evidence of reduced diversity around potentially functional sites but maize doesn't, this is hard to interpret... For any of the above outcomes, the next analysis will be useful.
 
 
