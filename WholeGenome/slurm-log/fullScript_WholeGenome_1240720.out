@@ -1,0 +1,29 @@
+pop1 = TIL
+pop2 = BKN
+angsdir = /home/beissing/bin/angsd0.610
+outputdir = /home/beissing/Dom_Bot_Git/WholeGenome/OUTS
+ref = /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa
+anc = /group/jrigrp3/bottleneckProject/genomes/TRIP.fa
+pop1List = INS/TIL_list.txt
+pop2List = INS/BKN_list.txt
+nIndPop1 = 13
+nIndPop2 = 23
+nPop1 = 26
+nPop2 = 46
+minperc = 0.8
+minIndPop1 = 10
+minIndPop2 = 18
+pop1F = INS/TIL.indF
+pop2F = INS/BKN.indF
+glikehood = 1
+minMapQ = 30
+cpu = 32
+regionfile = /home/beissing/Dom_Bot_Git/WholeGenome/INS/wholeGenomeRegionFile.txt
+windowsize = 1000
+step = 1000
+-bam INS/TIL_list.txt -out /home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_WholeGenome -doMajorMinor 1 -doMaf 1 -indF INS/TIL.indF -doSaf 2 -uniqueOnly 0 -anc /group/jrigrp3/bottleneckProject/genomes/TRIP.fa -minMapQ 30 -minQ 20 -nInd 13 -minInd 10 -baq 1 -ref /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa -GL 1 -P 32 -rf /home/beissing/Dom_Bot_Git/WholeGenome/INS/wholeGenomeRegionFile.txt
+
+/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_WholeGenome.saf 26 -P 32
+
+-bam INS/TIL_list.txt -out /home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_WholeGenome -doMajorMinor 1 -doMaf 1 -indF INS/TIL.indF -doSaf 2 -uniqueOnly 0 -anc /group/jrigrp3/bottleneckProject/genomes/TRIP.fa -minMapQ 30 -minQ 20 -nInd 13 -minInd 10 -baq 1 -ref /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa -GL 1 -P 32 -rf /home/beissing/Dom_Bot_Git/WholeGenome/INS/wholeGenomeRegionFile.txt
+

@@ -1,0 +1,2 @@
+/home/beissing/bin/angsd0.610/angsd -bam INS/snpCallList.txt -GL 1 -out SNPs/angsd_snps -doMaf 1 -doMajorMinor 1 -doGeno 5 -doPost 1 -postCutoff 0.95 -minMapQ 30 -minQ 20 -rf /home/beissing/Dom_Bot_Git/WholeGenome/INS/wholeGenomeRegionFile.txt -P 32 -SNP_pval 1e-6
+
