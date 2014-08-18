@@ -7,7 +7,8 @@
 ### 8-15-2014
 
 ### Set working directory
-setwd("../SNPs")
+getwd()
+setwd("SNPs")
 
 ### Load SNP calls
 rawSNPs <- read.table("angsd_snps.geno",header=F,stringsAsFactors=F,sep="\t",na.strings="NN")
