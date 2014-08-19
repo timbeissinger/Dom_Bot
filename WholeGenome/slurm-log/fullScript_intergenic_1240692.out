@@ -27,3 +27,13 @@ step = 1000
 
 -bam INS/TIL_list.txt -out /home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic -doMajorMinor 1 -doMaf 1 -indF INS/TIL.indF -doSaf 2 -uniqueOnly 0 -anc /group/jrigrp3/bottleneckProject/genomes/TRIP.fa -minMapQ 30 -minQ 20 -nInd 13 -minInd 10 -baq 1 -ref /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa -GL 1 -P 32 -rf /home/beissing/Dom_Bot_Git/WholeGenome/INS/intergenicRegionFile.txt
 
+/home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic.saf 46 -P 32
+
+gunzip -k /home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic.saf.pos.gz
+
+gunzip -k /home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic.saf.pos.gz
+
+cat /home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic.saf.pos /home/beissing/Dom_Bot_Git/WholeGenome/OUTS/BKN_intergenic.saf.pos|sort|uniq -d
+
+/home/beissing/bin/angsd0.610/angsd -bam INS/TIL_list.txt -out /home/beissing/Dom_Bot_Git/WholeGenome/OUTS/TIL_intergenic_conditioned -doMajorMinor 1 -doMaf 1 -indF INS/TIL.indF -doSaf 2 -uniqueOnly 0 -anc /group/jrigrp3/bottleneckProject/genomes/TRIP.fa -minMapQ 30 -minQ 20 -nInd 13 -minInd 10 -baq 1 -ref /group/jrigrp3/bottleneckProject/genomes/Zea_mays.AGPv3.22.dna.genome.fa -GL 1 -P 32 -rf /home/beissing/Dom_Bot_Git/WholeGenome/INS/intergenicRegionFile.txt -sites /home/beissing/Dom_Bot_Git/WholeGenome/OUTS/intersect.TIL.BKN_intergenic.txt
+
