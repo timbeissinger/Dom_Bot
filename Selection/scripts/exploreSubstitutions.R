@@ -117,3 +117,21 @@ plot(density(gap),col="red",lwd=3,main="Density of substitution spacing",xlab="S
 lines(density(uni_gap),col="blue",lwd=3)
 legend("topright","(x,y)",c("Observed distance between substitutions","Expected distribution between substitutions"),lwd=3,col=c("red","blue"))
 dev.off()
+
+
+### Load large TvMT
+TvMT <- read.table("TvMT.txt",header=T,stringsAsFactors=F)
+TvMT_1 <- TvMT[which(TvMT$chr==1),]
+
+hist(TvMT_1$pos,breaks=10000)
+
+
+gap <- TvMT_1$pos-c(1,TvMT_1$pos[1:{length(TvMT_1$pos)-1}])
+
+uni_samp <- sample(max(TvMT_1$pos),nrow(TvMT_1))[1:100]
+uni_samp <- uni_samp[order(uni_samp)]
+uni_gap <- uni_samp-c(1,uni_samp[1:{length(uni_samp)-1}])
+
+plot(density(uni_gap,bw=500000),col="blue",lwd=3,xlim=c(0,1.5e7))
+lines(density(gap,bw=500000),col="red",lwd=3,main="Density of substitution spacing",xlim=c(0,1.5e7))
+legend("topright","(x,y)",c("Observed distance between substitutions","Expected distribution between substitutions"),lwd=3,col=c("red","blue"))
